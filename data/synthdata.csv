@@ -1,0 +1,346 @@
+"grade","dm_childage_bl","dm_sex_bl","dm_ethnic_bl","dm_race_bl","dm_lunch_bl","io1_bl","io2_bl","io3_bl","io4_bl","sl_sleepschool_bl","sl_sleepweekend_bl","sl_sleepy_bl","sl_avgsleepcat_bl","sl_avgsleepwncat_bl","sl_latcat_bl","sl_bedmedia_bl"
+"7","12 years","male","non-hispanic or latino","white or european american","no","rarely","rarely","never","never",8.5,7.5,20,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","12 years","female","non-hispanic or latino","white or european american","yes","sometimes","rarely","sometimes","rarely",9,10.5,14,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","12 years","male","hispanic or latino","more than one race","yes","often","rarely","sometimes","rarely",9,10,15,"8-10 hrs","8-10 hrs","10 min or less",2.28571428571429
+"7","12 years","male","non-hispanic or latino","white or european american","yes","sometimes","sometimes","rarely","never",8.5,9,19,"8-10 hrs","8-10 hrs","20-30 min",2.28571428571429
+"8","13 years","male","non-hispanic or latino","white or european american","no","sometimes","never","rarely","rarely",8.80000019073486,8,22,"8-10 hrs","8-10 hrs","20-30 min",3
+"8","13 years","female","unknown/refused","unknown","yes","often","rarely","sometimes","sometimes",8,10,30,"8-10 hrs","8-10 hrs",">60 min",1
+"8","13 years","male","non-hispanic or latino","more than one race","no","sometimes","rarely","rarely","never",8,9.94999980926514,13,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","12 years","female","non-hispanic or latino","white or european american","yes","never","rarely","never","never",11.5,13.5,18,"More than 10 hrs","More than 10 hrs",NA,3
+"8","14 years","male","non-hispanic or latino","more than one race","yes","sometimes","never","rarely","never",9.5,7,15,"6-8 hrs","8-10 hrs",NA,2
+"8","14 years","male","non-hispanic or latino","more than one race","yes","sometimes","never","never","never",6.75,13,16,"8-10 hrs","6-8 hrs","10 min or less",0.857142857142857
+"7","12 years","female","non-hispanic or latino","more than one race","yes","often","sometimes","rarely","i don't know",9.82999992370605,8,27,"8-10 hrs","8-10 hrs","10 min or less",1.57142857142857
+"8","13 years","female","non-hispanic or latino","white or european american","yes","rarely","never","never","never",9.75,12,14,"More than 10 hrs","8-10 hrs","20-30 min",1.28571428571429
+"7","12 years","male","unknown/refused","more than one race","yes","sometimes","sometimes","sometimes","often",8.30000019073486,8.5,18,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","12 years","female","hispanic or latino","unknown","no","rarely","never","never","never",8.5,10.5,15,"8-10 hrs","8-10 hrs","10 min or less",NA
+"7","12 years","female","non-hispanic or latino","white or european american","yes","rarely","never","rarely","never",9.67000007629395,11,28,"More than 10 hrs","8-10 hrs","10 min or less",1
+"7","12 years","male","hispanic or latino","more than one race","yes","sometimes","never","rarely","never",8.5,10,17,"8-10 hrs","8-10 hrs","10 min or less",NA
+"7","12 years","female","non-hispanic or latino","more than one race","yes","often","sometimes","never","never",7,9.75,19,"8-10 hrs","6-8 hrs","10 min or less",1.28571428571429
+"7","12 years","female","non-hispanic or latino","more than one race","yes","sometimes","rarely","sometimes","never",7.5,10.8400001525879,15,"8-10 hrs","6-8 hrs","20-30 min",3
+"7","12 years","male","hispanic or latino","unknown","yes","rarely","rarely","rarely","sometimes",9.5,12.5,27,"8-10 hrs","8-10 hrs","20-30 min",0.714285714285714
+"7","12 years","female","non-hispanic or latino","american indian/alaska native","no","often","sometimes","often","often",9,8.5,24,"8-10 hrs","8-10 hrs","20-30 min",3
+"8","13 years","male","non-hispanic or latino","white or european american","yes","sometimes","never","sometimes","never",8,8,11,"8-10 hrs","8-10 hrs","20-30 min",NA
+"7","12 years","female","non-hispanic or latino","white or european american","yes","sometimes","rarely","rarely","never",6.5,10,15,"6-8 hrs","6-8 hrs","10 min or less",3
+"7","12 years","male","unknown/refused","american indian/alaska native","yes","sometimes","never","never","rarely",8.30000019073486,8,16,"8-10 hrs","8-10 hrs","10 min or less",1
+"7","12 years","female","hispanic or latino","more than one race","yes","sometimes","never","rarely","never",8.5,11,16,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","12 years","male","unknown/refused","more than one race","no","sometimes","rarely","rarely","never",8.5,12,16,"8-10 hrs","8-10 hrs",NA,3
+"7","13 years","male","unknown/refused","more than one race","yes","often","rarely","sometimes","rarely",9.25,9.5,24,"8-10 hrs","8-10 hrs","10 min or less",2
+"8","13 years","female","hispanic or latino","unknown","yes","rarely","rarely","never","rarely",7.5,10,19,"8-10 hrs","6-8 hrs","10 min or less",2.28571428571429
+"7","13 years","female","hispanic or latino","more than one race","yes","often","never","rarely","never",8.5,9.75,17,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","13 years","male","non-hispanic or latino","white or european american","yes","rarely","never","never","sometimes",7.82999992370605,6.5,12,"6-8 hrs","6-8 hrs","20-30 min",3
+"8","13 years","male","unknown/refused","white or european american","i don't know","sometimes","i don't know","rarely","rarely",10.2600002288818,11,11,"More than 10 hrs","More than 10 hrs",NA,1
+"7","12 years","male","unknown/refused","more than one race","no","sometimes","rarely","often","rarely",9.25,8.5,14,"8-10 hrs","8-10 hrs",">60 min",2
+"8","13 years","male","unknown/refused","white or european american","yes","sometimes","never","rarely","never",8.5,11.5,14,"8-10 hrs","8-10 hrs","20-30 min",3
+"8","13 years","female","non-hispanic or latino","white or european american","yes","rarely","rarely","never","never",8.5,11,20,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","12 years","female","unknown/refused","more than one race","no","often","sometimes","sometimes","rarely",8,11.5,26,"8-10 hrs","8-10 hrs","20-30 min",1.28571428571429
+"8","13 years","male","unknown/refused","black or african american","i don't know","rarely","rarely","sometimes","rarely",9.32999992370605,15.75,17,"More than 10 hrs","8-10 hrs","40-60 min",2.28571428571429
+"7","13 years","female","non-hispanic or latino","white or european american","no","sometimes","rarely","rarely","never",8.30000019073486,11,15,"8-10 hrs","8-10 hrs","20-30 min",NA
+"7","12 years","male","non-hispanic or latino","american indian/alaska native","no","rarely","never","never","often",10,10.5,24,"More than 10 hrs","8-10 hrs","10 min or less",2.28571428571429
+"7","12 years","male","non-hispanic or latino","white or european american","no","often","often","rarely","i don't know",9.5,6.5,24,"8-10 hrs","8-10 hrs",NA,0
+"7","12 years","female","non-hispanic or latino","white or european american","i don't know","sometimes","rarely","sometimes","never",9,11,18,"8-10 hrs","8-10 hrs","20-30 min",2
+"7","12 years","female","non-hispanic or latino","unknown","yes","sometimes","rarely","rarely","never",7,9,17,"6-8 hrs","6-8 hrs","40-60 min",3
+"7","12 years","male","non-hispanic or latino","white or european american","no","sometimes","rarely","never","often",8.63000011444092,6.5,22,"6-8 hrs","8-10 hrs","10 min or less",3
+"7","13 years","female","unknown/refused","white or european american","no","sometimes","i don't know","sometimes","never",6.5,10,16,"6-8 hrs","6-8 hrs","10 min or less",3
+"7","12 years","female","unknown/refused","unknown","i don't know","sometimes","often","never","never",9.82999992370605,11,8,"More than 10 hrs","8-10 hrs","20-30 min",1.28571428571429
+"7","12 years","male","unknown/refused","unknown","yes","sometimes","rarely","rarely","never",9,10.5,8,"8-10 hrs","8-10 hrs","20-30 min",1.28571428571429
+"7","12 years","male","non-hispanic or latino","white or european american","no","rarely","rarely","never","never",8.75,9,10,"8-10 hrs","8-10 hrs","20-30 min",NA
+"8","13 years","male","non-hispanic or latino","unknown","yes","sometimes","often","never","never",8.80000019073486,10,16,"More than 10 hrs","8-10 hrs","10 min or less",1
+"8","14 years","male","unknown/refused","white or european american","i don't know","sometimes","rarely","never","never",8.32999992370605,11,13,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","13 years","male","hispanic or latino","more than one race","no","often","rarely","sometimes","sometimes",10.5,8,22,"More than 10 hrs","More than 10 hrs","10 min or less",NA
+"8","13 years","male","hispanic or latino","more than one race","yes","sometimes","sometimes","often","rarely",8.5,9,23,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","13 years","female","non-hispanic or latino","white or european american","yes","rarely","never","never","sometimes",7.82999992370605,10,12,"8-10 hrs","6-8 hrs","20-30 min",3
+"8","13 years","female","unknown/refused","more than one race","yes","sometimes","never","never","never",7.5,8.5,8,"6-8 hrs","6-8 hrs",NA,3
+"7","12 years","female","hispanic or latino","more than one race","no","often","sometimes","never","never",9.82999992370605,11.5,8,"More than 10 hrs","8-10 hrs","10 min or less",2.28571428571429
+"8","13 years","male","hispanic or latino","more than one race","yes","sometimes","rarely","often","rarely",8.67000007629395,9,26,"8-10 hrs","8-10 hrs",">60 min",3
+"7","12 years","female","non-hispanic or latino","white or european american","yes","sometimes","sometimes","i don't know","rarely",8.5,11.25,26,"8-10 hrs","8-10 hrs","10 min or less",1
+"8","12 years","male","non-hispanic or latino","more than one race","yes","never","never","never","never",9.5,NA,9,"6-8 hrs","8-10 hrs","40-60 min",0
+"7","13 years","female","non-hispanic or latino","white or european american","no","rarely","never","never","never",8,10,18,"8-10 hrs","8-10 hrs",NA,3
+"8","14 years","female","hispanic or latino","american indian/alaska native","yes","sometimes","never","rarely","never",8,10,10,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","14 years","female","non-hispanic or latino","more than one race","yes","never","rarely","never","never",8,7.5,11,"6-8 hrs","8-10 hrs",NA,0
+"7","12 years","male","non-hispanic or latino","white or european american","no","rarely","rarely","rarely","rarely",8,10,NA,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","12 years","female","non-hispanic or latino","white or european american","no","rarely","never","never","never",10,15,8,"More than 10 hrs","8-10 hrs","10 min or less",NA
+"8","13 years","male","unknown/refused","white or european american","yes","rarely","sometimes","sometimes","never",7.5,9.5,16,"8-10 hrs","6-8 hrs",NA,3
+"8","13 years","male","non-hispanic or latino","more than one race","no","rarely","rarely","sometimes","sometimes",9.25,15.75,20,"More than 10 hrs","8-10 hrs","10 min or less",1
+"8","13 years","male","hispanic or latino","more than one race","yes","rarely","rarely","rarely","never",5.5,13,30,"6 hrs or less","6 hrs or less",">60 min",3
+"7","12 years","female","non-hispanic or latino","white or european american","yes","rarely","never","never","never",9,10.4300003051758,8,"8-10 hrs","8-10 hrs","10 min or less",0
+"8","13 years","male","hispanic or latino","unknown","yes","often","rarely","sometimes","sometimes",9,9.5,22,"8-10 hrs","8-10 hrs","10 min or less",2.71428571428571
+"8","13 years","male","non-hispanic or latino","white or european american","yes","sometimes","never","sometimes","never",8,12,17,"8-10 hrs","8-10 hrs","20-30 min",3
+"7","13 years","male","non-hispanic or latino","white or european american","yes","often","rarely","rarely","sometimes",8,8,12,"8-10 hrs","8-10 hrs",">60 min",3
+"7","13 years","male","non-hispanic or latino","unknown","yes","i don't know","i don't know","sometimes","never",10,10,10,"8-10 hrs","8-10 hrs","20-30 min",0.857142857142857
+"8","13 years","female","non-hispanic or latino","american indian/alaska native","no","often","sometimes","often","sometimes",9.25,11.5,23,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","13 years","female","non-hispanic or latino","black or african american","yes","sometimes","rarely","sometimes","never",9,8,10,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","i don't know","female","non-hispanic or latino","black or african american","no","rarely","never","never","never",9.30000019073486,13,22,"8-10 hrs","8-10 hrs","10 min or less",2.28571428571429
+"8","13 years","female","non-hispanic or latino","white or european american","yes","sometimes","sometimes","rarely","rarely",7,16,16,"8-10 hrs","6-8 hrs",NA,3
+"8","13 years","female","non-hispanic or latino","more than one race","yes","sometimes","sometimes","rarely","rarely",8.5,12,NA,"8-10 hrs","8-10 hrs","10 min or less",1.28571428571429
+"7","12 years","female","non-hispanic or latino","white or european american","no","sometimes","rarely","rarely","rarely",7.65999984741211,8.5,25,"6-8 hrs","6-8 hrs","10 min or less",3
+"8","13 years","male","unknown/refused","white or european american","yes","sometimes","sometimes","sometimes","never",5,0,27,"6 hrs or less","6 hrs or less","20-30 min",3
+"7","11 years","male","non-hispanic or latino","more than one race","yes","often","sometimes","never","often",7,7,13,"6-8 hrs","6-8 hrs","20-30 min",2.71428571428571
+"8","13 years","female","hispanic or latino","more than one race","no","rarely","never","never","never",8.5,10.5,16,"8-10 hrs","8-10 hrs","20-30 min",3
+"8","13 years","male","hispanic or latino","unknown","no","rarely","never","never","rarely",5.5,7.5,17,NA,NA,">60 min",2
+"7","13 years","male","unknown/refused","white or european american","i don't know","i don't know","i don't know","i don't know","never",9,10,4,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","14 years","male","hispanic or latino","unknown","yes","sometimes","rarely","never","never",9,9.5,10,"8-10 hrs","8-10 hrs","10 min or less",0.285714285714286
+"7","12 years","female","hispanic or latino","unknown","no","i don't know","i don't know","i don't know","i don't know",9.25,8.5,NA,"8-10 hrs","8-10 hrs",NA,1.57142857142857
+"7","13 years","female","hispanic or latino","more than one race","yes","often","rarely","sometimes","rarely",7.5,11,11,"8-10 hrs","6-8 hrs","20-30 min",3
+"7","12 years","male","unknown/refused","white or european american","no","sometimes","sometimes","sometimes","rarely",10,13.5,26,"More than 10 hrs","8-10 hrs",">60 min",0
+"8","13 years","male","unknown/refused","white or european american","yes","sometimes","sometimes","rarely","rarely",10.2600002288818,10,19,"8-10 hrs","More than 10 hrs",NA,3
+"7","13 years","male","non-hispanic or latino","white or european american","yes","never","never","never","never",10.5,10.5,9,"More than 10 hrs","More than 10 hrs","10 min or less",3
+"7","12 years","male","non-hispanic or latino","white or european american","yes","sometimes","rarely","rarely","never",8.5,8.5,7,"8-10 hrs","8-10 hrs","20-30 min",2.28571428571429
+"8","14 years","female","non-hispanic or latino","white or european american","yes","sometimes","rarely","rarely","never",8.15999984741211,10,14,"8-10 hrs","8-10 hrs","20-30 min",2.28571428571429
+"8","13 years","male","hispanic or latino","more than one race","yes","sometimes","rarely","often","often",6.25,7.5,10,"6-8 hrs","6-8 hrs","10 min or less",3
+"8","14 years","male","hispanic or latino","unknown","yes","often","rarely","sometimes","often",6.25,7,22,"6-8 hrs","6-8 hrs",NA,3
+"7","12 years","female","hispanic or latino","more than one race","yes","often","sometimes","sometimes","rarely",11,11,19,"More than 10 hrs","More than 10 hrs","20-30 min",2
+"8","13 years","male","non-hispanic or latino","white or european american","yes","sometimes","rarely","rarely","never",8.5,8.5,14,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","13 years","female","unknown/refused","white or european american","no","rarely","never","never","never",9,11,13,"8-10 hrs","8-10 hrs","40-60 min",0
+"7","12 years","male","unknown/refused","more than one race","no","often","sometimes","rarely","often",8,4,20,"6-8 hrs","8-10 hrs","20-30 min",3
+"7","13 years","female","non-hispanic or latino","white or european american","yes","never","never","often","sometimes",10,9,18,"8-10 hrs","8-10 hrs","40-60 min",3
+"7","12 years","male","unknown/refused","more than one race","no","rarely","sometimes","never","rarely",10.6599998474121,9,14,"8-10 hrs","More than 10 hrs","20-30 min",2.71428571428571
+"7","12 years","male","hispanic or latino","more than one race","yes","sometimes","often","sometimes","rarely",9.5,7.40999984741211,7,"8-10 hrs","8-10 hrs",NA,NA
+"7","13 years","male","unknown/refused","american indian/alaska native","no","often","sometimes","often","often",8,10.0799999237061,23,"8-10 hrs","8-10 hrs","20-30 min",1
+"8","13 years","male","non-hispanic or latino","white or european american","no","rarely","rarely","rarely","rarely",8.65999984741211,9.5,8,"8-10 hrs","8-10 hrs","10 min or less",2.28571428571429
+"7","12 years","male","hispanic or latino","more than one race","yes","rarely","never","never","never",8.07999992370605,10,15,"8-10 hrs","8-10 hrs","20-30 min",2.28571428571429
+"7","12 years","male","hispanic or latino","american indian/alaska native","yes","rarely","rarely","rarely","sometimes",7,5.75,23,"6-8 hrs","6-8 hrs","20-30 min",NA
+"8","13 years","female","non-hispanic or latino","black or african american","yes","sometimes","rarely","sometimes","rarely",7.5,8.5,16,"6-8 hrs","6-8 hrs","20-30 min",1.28571428571429
+"8","13 years","female","non-hispanic or latino","white or european american","no","often","often","rarely","never",6,11,17,"6 hrs or less","6 hrs or less",NA,3
+"8","13 years","female","hispanic or latino","unknown","yes","sometimes","rarely","never","never",9,8,20,"8-10 hrs","8-10 hrs","10 min or less",NA
+"8","13 years","male","hispanic or latino","more than one race","yes","sometimes","rarely","sometimes","rarely",9,9,11,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","13 years","male","non-hispanic or latino","white or european american","yes","rarely","rarely","rarely","rarely",7.90999984741211,8,17,"8-10 hrs","6-8 hrs","20-30 min",3
+"7","12 years","other","unknown/refused","more than one race","no","sometimes","never","never","rarely",8.63000011444092,12.5,26,"8-10 hrs","8-10 hrs","20-30 min",2.28571428571429
+"8","14 years","female","unknown/refused","unknown","yes","sometimes","never","sometimes","never",8.5,9.5,9,"8-10 hrs","8-10 hrs","10 min or less",2.71428571428571
+"8","14 years","female","hispanic or latino","more than one race","yes","often","sometimes","often","rarely",7.25,11,26,"8-10 hrs","6-8 hrs","10 min or less",3
+"7","12 years","male","unknown/refused","more than one race","no","rarely","rarely","often","rarely",9.5,9,8,"8-10 hrs","8-10 hrs","10 min or less",2.28571428571429
+"7","12 years","female","hispanic or latino","unknown","yes","sometimes","sometimes","rarely","never",9.15999984741211,7.57999992370605,10,"8-10 hrs","8-10 hrs","20-30 min",2.28571428571429
+"7","12 years","female","non-hispanic or latino","white or european american","no","sometimes","rarely","sometimes","i don't know",9.25,10,22,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","12 years","female","non-hispanic or latino","white or european american","i don't know","rarely","sometimes","rarely","never",9.25,10,18,"8-10 hrs","8-10 hrs","40-60 min",2
+"8","13 years","male","unknown/refused","more than one race","yes","sometimes","sometimes","rarely","rarely",9.15999984741211,8.5,15,"8-10 hrs","8-10 hrs",NA,3
+"8","13 years","male","non-hispanic or latino","american indian/alaska native","no","sometimes","sometimes","never","never",8.25,10,19,"8-10 hrs","8-10 hrs","20-30 min",1
+"7","13 years","female","unknown/refused","white or european american","yes","sometimes","rarely","rarely","never",6.65999984741211,12.5,13,"6-8 hrs","6-8 hrs","20-30 min",3
+"7","13 years","female","hispanic or latino","more than one race","yes","often","often","never","never",NA,9.75,14,"6-8 hrs","6 hrs or less","20-30 min",3
+"8","13 years","male","unknown/refused","more than one race","no","rarely","rarely","sometimes","never",9.25,13.5,8,"More than 10 hrs","8-10 hrs","10 min or less",2.28571428571429
+"8","14 years","male","hispanic or latino","black or african american","i don't know","sometimes","rarely","sometimes","rarely",8,7,17,"6-8 hrs","8-10 hrs","10 min or less",3
+"8","13 years","female","non-hispanic or latino","white or european american","yes","sometimes","never","never","never",8.5,10,20,"8-10 hrs","8-10 hrs","20-30 min",3
+"8","13 years","female","unknown/refused","more than one race","i don't know","sometimes","rarely","rarely","never",8.5,8,9,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","12 years","female","unknown/refused","more than one race","no","often","sometimes","rarely","i don't know",9,9,26,"8-10 hrs","8-10 hrs","20-30 min",2.28571428571429
+"8","13 years","female","non-hispanic or latino","unknown","no","often","often","often","often",6.32999992370605,8,11,"6-8 hrs","6-8 hrs","20-30 min",2
+"8","13 years","male","hispanic or latino","more than one race","yes","sometimes","sometimes","often","rarely",8.5,8,26,"8-10 hrs","8-10 hrs","40-60 min",1.71428571428571
+"8","13 years","male","unknown/refused","white or european american","i don't know","sometimes","sometimes","rarely","sometimes",9.25,10.5,11,"8-10 hrs","8-10 hrs",NA,1.57142857142857
+"7","12 years","male","unknown/refused","unknown","no","sometimes","never","rarely","never",9,12,2,"8-10 hrs","8-10 hrs","10 min or less",1.28571428571429
+"8","13 years","male","unknown/refused","unknown","yes","often","often","rarely","never",6,7,9,"6-8 hrs","6 hrs or less","20-30 min",3
+"7","12 years","male","unknown/refused","more than one race","no","often","often","never","i don't know",7.5,6.5,26,"6-8 hrs","6-8 hrs","10 min or less",3
+"7","12 years","male","non-hispanic or latino","white or european american","yes","sometimes","never","rarely","sometimes",8,8,10,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","14 years","female","unknown/refused","unknown","yes","often","often","rarely","never",5.75,7.40999984741211,8,"6-8 hrs","6 hrs or less",NA,2.28571428571429
+"8","13 years","female","non-hispanic or latino","white or european american","no","sometimes","often","never","rarely",6.75,10.5,14,"8-10 hrs","6-8 hrs","20-30 min",3
+"8","13 years","male","hispanic or latino","unknown","no","rarely","rarely","rarely","never",9.5,13.5,9,"More than 10 hrs","8-10 hrs","20-30 min",2.28571428571429
+"7","12 years","male","hispanic or latino","more than one race","no","sometimes","never","rarely","rarely",10,8.75,15,"8-10 hrs","8-10 hrs",NA,3
+"7","13 years","female","non-hispanic or latino","american indian/alaska native","no","rarely","never","never","never",7.5,10,12,"8-10 hrs","6-8 hrs","20-30 min",3
+"8","13 years","male","unknown/refused","unknown","no","i don't know","i don't know","i don't know","i don't know",9,9,11,"8-10 hrs","8-10 hrs","20-30 min",0
+"7","12 years","male","non-hispanic or latino","white or european american","yes","rarely","never","rarely","never",9.67000007629395,13.1999998092651,NA,"More than 10 hrs","8-10 hrs","10 min or less",1
+"8","13 years","male","hispanic or latino","white or european american","yes","rarely","rarely","never","never",7.75,NA,18,"6 hrs or less","6-8 hrs",NA,3
+"7","12 years","female","non-hispanic or latino","white or european american","no","sometimes","often","sometimes","rarely",8,9.5,24,"8-10 hrs","8-10 hrs",NA,3
+"7","12 years","female","non-hispanic or latino","white or european american","no","sometimes","rarely","rarely","never",8.5,9.75,7,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","14 years","male","non-hispanic or latino","white or european american","yes","sometimes","never","rarely","never",8.5,8,11,"8-10 hrs","8-10 hrs",NA,2.28571428571429
+"7","12 years","male","hispanic or latino","unknown","no","rarely","rarely","never","never",10,9,13,"8-10 hrs","8-10 hrs","10 min or less",2.28571428571429
+"8","13 years","male","non-hispanic or latino","white or european american","no","rarely","rarely","never","never",NA,10,20,"6-8 hrs","6 hrs or less",NA,NA
+"7","13 years","male","non-hispanic or latino","more than one race","yes","sometimes","rarely","sometimes","often",6.84000015258789,7.5,26,"6-8 hrs","6-8 hrs","40-60 min",3
+"8","14 years","male","unknown/refused","white or european american","yes","never","rarely","sometimes","often",9,9,26,"8-10 hrs","8-10 hrs","20-30 min",0.285714285714286
+"8","13 years","male","unknown/refused","white or european american","i don't know","rarely","rarely","sometimes","never",9.32999992370605,14,8,"8-10 hrs","8-10 hrs","10 min or less",0
+"8","13 years","female","hispanic or latino","white or european american","yes","often","rarely","sometimes","rarely",7.5,11.1700000762939,19,"8-10 hrs","6-8 hrs","10 min or less",3
+"8","13 years","female","hispanic or latino","more than one race","yes","sometimes","never","rarely","never",8.5,11,12,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","14 years","male","unknown/refused","unknown","no","sometimes","never","rarely","rarely",8.42000007629395,8,18,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","14 years","male","non-hispanic or latino","more than one race","yes","sometimes","never","rarely","never",9.5,10,16,"8-10 hrs","8-10 hrs","10 min or less",2.71428571428571
+"7","12 years","female","unknown/refused","more than one race","yes","sometimes","never","rarely","never",8.5,9.25,12,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","12 years","male","non-hispanic or latino","more than one race","no","never","never","never","never",8.5,9,7,"8-10 hrs","8-10 hrs","20-30 min",3
+"7","13 years","male","hispanic or latino","more than one race","yes","sometimes","rarely","rarely","never",8.75,10,12,"8-10 hrs","8-10 hrs","10 min or less",1.28571428571429
+"8","14 years","male","non-hispanic or latino","white or european american","i don't know","sometimes","sometimes","i don't know","never",8,9,22,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","13 years","female","non-hispanic or latino","more than one race","no","often","often","sometimes","rarely",8,10,10,"8-10 hrs","8-10 hrs","20-30 min",3
+"8","14 years","female","unknown/refused","white or european american","no","sometimes","sometimes","rarely","never",9,12,22,"8-10 hrs","8-10 hrs",">60 min",1
+"8","14 years","male","non-hispanic or latino","white or european american","yes","sometimes","sometimes","sometimes","sometimes",8.5,10,NA,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","13 years","female","non-hispanic or latino","white or european american","yes","rarely","sometimes","rarely","often",6.84000015258789,9,17,"6-8 hrs","6-8 hrs","10 min or less",3
+"8","13 years","male","hispanic or latino","more than one race","yes","sometimes","sometimes","often","never",8.67000007629395,10,10,"8-10 hrs","8-10 hrs","20-30 min",3
+"8","13 years","male","hispanic or latino","unknown","yes","rarely","never","sometimes","sometimes",7.82999992370605,5,12,"6-8 hrs","6-8 hrs","20-30 min",3
+"8","13 years","female","hispanic or latino","more than one race","yes","sometimes","sometimes","rarely","often",NA,10,17,"6-8 hrs","6 hrs or less",">60 min",3
+"8","13 years","male","hispanic or latino","more than one race","yes","sometimes","rarely","sometimes","never",7.5,13,19,"8-10 hrs","6-8 hrs",NA,1
+"8","13 years","male","hispanic or latino","unknown","yes","rarely","rarely","rarely","never",5,7.67000007629395,7,"6 hrs or less","6 hrs or less",NA,3
+"7","11 years","male","non-hispanic or latino","more than one race","yes","rarely","never","never","never",5.5,10,10,"6-8 hrs","6 hrs or less","40-60 min",NA
+"8","13 years","male","unknown/refused","white or european american","yes","sometimes","rarely","never","never",8.25,5,9,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","13 years","female","non-hispanic or latino","white or european american","yes","sometimes","sometimes","rarely","rarely",8.15999984741211,7.5,18,"6-8 hrs","8-10 hrs","20-30 min",3
+"7","12 years","female","non-hispanic or latino","white or european american","yes","rarely","sometimes","never","never",9,11.5,28,"8-10 hrs","8-10 hrs","20-30 min",1.57142857142857
+"8","14 years","male","non-hispanic or latino","white or european american","yes","rarely","sometimes","rarely","rarely",7,9,16,"6-8 hrs","6-8 hrs","40-60 min",0.857142857142857
+"8","13 years","female","unknown/refused","more than one race","yes","sometimes","rarely","sometimes","rarely",9,8.5,14,"8-10 hrs","8-10 hrs",NA,2
+"8","13 years","female","non-hispanic or latino","black or african american","no","never","never","never","never",9.5,11,13,"8-10 hrs","8-10 hrs",NA,2.28571428571429
+"8","13 years","male","unknown/refused","unknown","yes","rarely","rarely","sometimes","sometimes",8.75,10,11,"8-10 hrs","8-10 hrs","10 min or less",2
+"7","12 years","male","hispanic or latino","more than one race","yes","sometimes","never","rarely","never",8,13,20,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","13 years","male","hispanic or latino","more than one race","yes","sometimes","never","rarely","never",9.5,11,8,"8-10 hrs","8-10 hrs","10 min or less",2.28571428571429
+"8","13 years","female","non-hispanic or latino","white or european american","yes","sometimes","rarely","rarely","rarely",9.5,10,16,"8-10 hrs","8-10 hrs","10 min or less",2.42857142857143
+"8","13 years","female","unknown/refused","white or european american","no","often","sometimes","often","rarely",7.25,10,26,"8-10 hrs","6-8 hrs",">60 min",3
+"7","12 years","male","hispanic or latino","more than one race","yes","rarely","sometimes","often","rarely",7,7.5,14,"6-8 hrs","6-8 hrs","20-30 min",2.71428571428571
+"8","13 years","female","non-hispanic or latino","more than one race","no","often","never","never","never",8.5,6,15,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","12 years","male","unknown/refused","more than one race","no","often","sometimes","never","sometimes",2.75,4,24,"6 hrs or less","6 hrs or less","10 min or less",3
+"8","14 years","female","unknown/refused","white or european american","no","sometimes","rarely","rarely","rarely",6.65999984741211,12.5,27,NA,"6-8 hrs",">60 min",3
+"7","12 years","female","non-hispanic or latino","black or african american","no","rarely","often","rarely","never",8,9.5,15,"8-10 hrs","8-10 hrs",NA,3
+"7","13 years","male","hispanic or latino","more than one race","yes","sometimes","never","rarely","never",8.5,10.5,NA,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","13 years","male","non-hispanic or latino","white or european american","no","sometimes","sometimes","rarely","rarely",9.25,8,15,"8-10 hrs","8-10 hrs","20-30 min",2.28571428571429
+"8","13 years","female","non-hispanic or latino","american indian/alaska native","no","sometimes","sometimes","often","sometimes",8,9.25,18,"8-10 hrs","8-10 hrs","20-30 min",1
+"8","13 years","male","hispanic or latino","more than one race","yes","sometimes","sometimes","sometimes","rarely",NA,5,13,NA,NA,"20-30 min",3
+"7","12 years","male","hispanic or latino","unknown","yes","never","never","never","never",8.5,8.25,20,"8-10 hrs","8-10 hrs",">60 min",3
+"8","13 years","male","unknown/refused","more than one race","yes","often","never","never","sometimes",8.80000019073486,7,18,"8-10 hrs","8-10 hrs",NA,3
+"8","13 years","male","non-hispanic or latino","more than one race","no","often","often","sometimes","rarely",9.14000034332275,6,18,"6-8 hrs","8-10 hrs",NA,3
+"8","13 years","male","non-hispanic or latino","white or european american","yes","sometimes","never","rarely","never",6.75,8.5,9,"6-8 hrs","6-8 hrs","10 min or less",3
+"7","12 years","male","non-hispanic or latino","white or european american","yes","often","sometimes","sometimes","rarely",8,6.5,16,"6-8 hrs","8-10 hrs",">60 min",3
+"8","13 years","female","non-hispanic or latino","white or european american","no","rarely","never","never","never",8,8.5,23,"8-10 hrs","8-10 hrs","10 min or less",NA
+"8","13 years","male","hispanic or latino","unknown","yes","rarely","rarely","rarely","never",9.5,9.75,3,"8-10 hrs","8-10 hrs","20-30 min",2
+"7","12 years","female","non-hispanic or latino","white or european american","i don't know","sometimes","rarely","rarely","rarely",9.25,10.5,8,"8-10 hrs","8-10 hrs","10 min or less",1.57142857142857
+"7","12 years","female","non-hispanic or latino","black or african american","no","never","never","never","never",9.75,12.5,15,"More than 10 hrs","8-10 hrs",NA,1.57142857142857
+"7","12 years","female","non-hispanic or latino","white or european american","no","sometimes","rarely","sometimes","never",8.5,10.5,11,"8-10 hrs","8-10 hrs","10 min or less",2
+"7","13 years","male","non-hispanic or latino","white or european american","no","rarely","rarely","never","rarely",7.90999984741211,9,16,"8-10 hrs","6-8 hrs","20-30 min",3
+"8","13 years","male","unknown/refused","black or african american","no","rarely","rarely","sometimes","rarely",8.67000007629395,7.5,9,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","13 years","male","hispanic or latino","more than one race","yes","never","never","never","never",9.5,9,7,"8-10 hrs","8-10 hrs","10 min or less",0.714285714285714
+"7","12 years","female","unknown/refused","unknown","yes","often","rarely","sometimes","rarely",9,8.5,24,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","12 years","female","non-hispanic or latino","white or european american","no","sometimes","rarely","often","never",9,10.5,10,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","12 years","male","non-hispanic or latino","more than one race","yes","never","rarely","never","never",9,10,10,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","13 years","female","non-hispanic or latino","unknown","yes","often","often","often","never",7,6,26,"6-8 hrs","6-8 hrs","20-30 min",2.28571428571429
+"7","13 years","female","non-hispanic or latino","more than one race","no","rarely","never","never","never",9.5,11,22,"8-10 hrs","8-10 hrs","10 min or less",1
+"7","12 years","female","hispanic or latino","unknown","yes","often","rarely","sometimes","often",9.82999992370605,6,24,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","13 years","male","hispanic or latino","more than one race","yes","sometimes","rarely","never","rarely",7.25,7.5,11,"6-8 hrs","6-8 hrs","20-30 min",3
+"8","13 years","female","hispanic or latino","unknown","yes","sometimes","never","rarely","never",8.5,12,9,"8-10 hrs","8-10 hrs","20-30 min",3
+"8","13 years","female","non-hispanic or latino","white or european american","no","rarely","never","never","never",9.75,13.5,22,"More than 10 hrs","8-10 hrs","10 min or less",2.28571428571429
+"8","13 years","male","unknown/refused","more than one race","yes","often","often","sometimes","often",6.84000015258789,5,13,"6-8 hrs","6-8 hrs","40-60 min",1.71428571428571
+"7","12 years","female","non-hispanic or latino","more than one race","yes","sometimes","rarely","sometimes","rarely",8.5,10.5,25,"8-10 hrs","8-10 hrs","10 min or less",2
+"8","13 years","female","non-hispanic or latino","white or european american","no","sometimes","sometimes","rarely","never",7,16,25,"8-10 hrs","6-8 hrs",">60 min",3
+"8","13 years","male","non-hispanic or latino","white or european american","no","sometimes","rarely","rarely","rarely",9.15999984741211,10,13,"8-10 hrs","8-10 hrs","10 min or less",2.28571428571429
+"8","13 years","female","non-hispanic or latino","white or european american","yes","sometimes","rarely","never","rarely",8.25,10,10,"8-10 hrs","8-10 hrs","20-30 min",2.28571428571429
+"8","13 years","female","unknown/refused","white or european american","no","sometimes","never","rarely","never",NA,9,9,"6 hrs or less","6 hrs or less","10 min or less",3
+"7","12 years","male","non-hispanic or latino","white or european american","no","rarely","rarely","never","never",9.5,7,13,"8-10 hrs","8-10 hrs","40-60 min",3
+"8","13 years","female","hispanic or latino","more than one race","yes","often","often","sometimes","rarely",8.5,NA,7,"8-10 hrs","8-10 hrs",NA,3
+"8","13 years","male","non-hispanic or latino","more than one race","no","often","often","sometimes","often",7,6,22,"6-8 hrs","6-8 hrs",">60 min",3
+"8","13 years","male","unknown/refused","black or african american","yes","i don't know","often","rarely","never",9,2,8,"8-10 hrs","8-10 hrs","20-30 min",0.857142857142857
+"8","13 years","female","hispanic or latino","more than one race","yes","often","rarely","sometimes","rarely",6.80000019073486,7,14,"6-8 hrs","6-8 hrs","10 min or less",3
+"8","14 years","female","unknown/refused","white or european american","yes","often","often","rarely","rarely",8,10,18,"8-10 hrs","8-10 hrs","40-60 min",3
+"7","12 years","male","hispanic or latino","more than one race","no","rarely","never","never","rarely",8.5,8,17,"8-10 hrs","8-10 hrs",">60 min",3
+"7","12 years","female","non-hispanic or latino","white or european american","yes","rarely","never","never","never",10,12.5,22,"More than 10 hrs","8-10 hrs","10 min or less",1.57142857142857
+"8","13 years","male","non-hispanic or latino","more than one race","no","often","sometimes","sometimes","never",6,NA,21,NA,NA,"10 min or less",3
+"8","13 years","female","unknown/refused","white or european american","yes","never","never","never","rarely",7.5,10.8400001525879,20,"8-10 hrs","6-8 hrs",NA,2.28571428571429
+"8","13 years","male","hispanic or latino","unknown","yes","often","rarely","sometimes","rarely",9.5,7,18,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","12 years","male","non-hispanic or latino","more than one race","yes","often","sometimes","rarely","rarely",9.5,10,16,"8-10 hrs","8-10 hrs","10 min or less",2.28571428571429
+"8","14 years","female","hispanic or latino","more than one race","no","often","often","rarely","never",6,6,13,"6-8 hrs","6 hrs or less",NA,3
+"8","14 years","male","non-hispanic or latino","white or european american","yes","often","sometimes","often","rarely",7.92000007629395,4,14,"6-8 hrs","6-8 hrs","10 min or less",3
+"8","13 years","male","non-hispanic or latino","white or european american","yes","sometimes","never","never","never",6.75,9.5,15,"8-10 hrs","6-8 hrs","10 min or less",3
+"7","12 years","female","unknown/refused","white or european american","no","sometimes","often","never","never",10,12,13,"More than 10 hrs","8-10 hrs","10 min or less",3
+"8","14 years","female","unknown/refused","unknown","yes","often","rarely","sometimes","sometimes",9,8.5,30,"8-10 hrs","8-10 hrs","10 min or less",1.57142857142857
+"8","13 years","female","hispanic or latino","unknown","yes","sometimes","never","rarely","never",9.5,11,14,"8-10 hrs","8-10 hrs","10 min or less",1.28571428571429
+"7","12 years","female","hispanic or latino","more than one race","no","often","rarely","rarely","never",7.82999992370605,9.75,15,"8-10 hrs","6-8 hrs","20-30 min",2
+"8","13 years","male","unknown/refused","white or european american","i don't know","rarely","sometimes","sometimes","never",8,9.5,17,"8-10 hrs","8-10 hrs",NA,3
+"7","13 years","male","hispanic or latino","black or african american","i don't know","rarely","often","sometimes","rarely",6,7.5,8,"6-8 hrs","6 hrs or less","20-30 min",3
+"7","12 years","female","unknown/refused","white or european american","yes","rarely","never","sometimes","never",10,11,8,"More than 10 hrs","8-10 hrs","10 min or less",3
+"7","12 years","female","non-hispanic or latino","white or european american","no","sometimes","sometimes","i don't know","never",9.82999992370605,12,8,"More than 10 hrs","8-10 hrs","10 min or less",3
+"8","14 years","female","unknown/refused","unknown","yes","sometimes","never","rarely","rarely",9,9.25,15,"8-10 hrs","8-10 hrs","40-60 min",NA
+"7","12 years","male","unknown/refused","more than one race","yes","often","rarely","sometimes","rarely",9.5,10,22,"More than 10 hrs","8-10 hrs",NA,3
+"8","13 years","female","hispanic or latino","more than one race","yes","never","rarely","never","never",8.32999992370605,8,16,"8-10 hrs","8-10 hrs",NA,0.714285714285714
+"7","12 years","male","non-hispanic or latino","white or european american","yes","rarely","sometimes","rarely","never",9,8.5,8,"8-10 hrs","8-10 hrs","10 min or less",2.28571428571429
+"8","13 years","male","hispanic or latino","more than one race","yes","sometimes","rarely","rarely","never",10.2600002288818,7.40999984741211,8,"8-10 hrs","More than 10 hrs","10 min or less",0.714285714285714
+"7","12 years","male","non-hispanic or latino","american indian/alaska native","i don't know","rarely","never","never","never",8.90999984741211,9,13,"8-10 hrs","8-10 hrs",NA,2
+"7","12 years","female","hispanic or latino","unknown","yes","often","rarely","rarely","never",8.25,9.5,15,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","12 years","female","non-hispanic or latino","white or european american","i don't know","sometimes","often","never","never",9.82999992370605,12.5,14,"More than 10 hrs","8-10 hrs","10 min or less",3
+"7","12 years","male","hispanic or latino","more than one race","yes","rarely","rarely","rarely","rarely",7.65999984741211,7.5,19,"6-8 hrs","6-8 hrs","10 min or less",3
+"8","14 years","female","unknown/refused","white or european american","no","i don't know","i don't know","i don't know","i don't know",5,7,26,NA,NA,"10 min or less",3
+"7","12 years","female","unknown/refused","more than one race","yes","rarely","rarely","often","never",7,10.5,21,"8-10 hrs","6-8 hrs","10 min or less",3
+"8","14 years","female","unknown/refused","more than one race","i don't know","often","sometimes","often","rarely",8.5,9.5,26,"8-10 hrs","8-10 hrs","20-30 min",2.28571428571429
+"8","14 years","male","non-hispanic or latino","american indian/alaska native","yes","sometimes","often","never","never",7.5,14,15,"8-10 hrs","6-8 hrs","20-30 min",0
+"7","12 years","male","unknown/refused","white or european american","i don't know","i don't know","i don't know","i don't know","i don't know",8,10.75,10,"8-10 hrs","8-10 hrs","20-30 min",2.28571428571429
+"7","13 years","male","non-hispanic or latino","white or european american","no","often","never","sometimes","never",9.5,10,10,"8-10 hrs","8-10 hrs","20-30 min",3
+"7","12 years","female","hispanic or latino","unknown","yes","often","sometimes","often","often",7.5,7.5,26,"6-8 hrs","6-8 hrs","10 min or less",2.28571428571429
+"7","13 years","male","non-hispanic or latino","american indian/alaska native","no","often","often","rarely","often",8,1,21,"6-8 hrs","8-10 hrs","10 min or less",1.28571428571429
+"7","12 years","female","unknown/refused","unknown","yes","sometimes","never","rarely","rarely",7.65999984741211,7.5,25,"6-8 hrs","6-8 hrs","10 min or less",NA
+"7","13 years","female","hispanic or latino","unknown","yes","rarely","sometimes","never","never",6,10,19,"8-10 hrs","6 hrs or less","40-60 min",2
+"8","13 years","female","hispanic or latino","more than one race","yes","often","rarely","sometimes","rarely",6,11,16,"6-8 hrs","6 hrs or less","20-30 min",3
+"7","12 years","male","hispanic or latino","more than one race","yes","sometimes","sometimes","sometimes","rarely",10,NA,11,"8-10 hrs","8-10 hrs","10 min or less",2.71428571428571
+"8","13 years","male","hispanic or latino","black or african american","no","rarely","never","never","never",7.5,8,15,"6-8 hrs","6-8 hrs","20-30 min",3
+"7","12 years","male","hispanic or latino","unknown","yes","often","rarely","sometimes","sometimes",7,5,28,"6-8 hrs","6-8 hrs","40-60 min",1.71428571428571
+"8","13 years","female","non-hispanic or latino","white or european american","no","rarely","often","never","never",7.5,9.5,23,"8-10 hrs","6-8 hrs","10 min or less",3
+"8","13 years","male","unknown/refused","unknown","no","often","sometimes","often","sometimes",9.25,10,11,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","13 years","male","non-hispanic or latino","american indian/alaska native","no","sometimes","sometimes","sometimes","often",8.5,6.5,18,"8-10 hrs","8-10 hrs","20-30 min",3
+"7","12 years","female","hispanic or latino","unknown","no","sometimes","sometimes","rarely","never",9.82999992370605,12.5,18,"More than 10 hrs","8-10 hrs","10 min or less",3
+"7","13 years","female","non-hispanic or latino","more than one race","yes","sometimes","rarely","sometimes","i don't know",8.5,8.5,22,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","13 years","female","unknown/refused","white or european american","no","sometimes","sometimes","rarely","never",8.25,11,26,"8-10 hrs","8-10 hrs",">60 min",1
+"8","13 years","female","unknown/refused","more than one race","yes","sometimes","rarely","often","never",7,15,17,"6-8 hrs","6-8 hrs",">60 min",3
+"8","13 years","female","hispanic or latino","unknown","yes","sometimes","sometimes","rarely","never",8,8.5,19,"8-10 hrs","8-10 hrs","10 min or less",2
+"7","12 years","female","non-hispanic or latino","white or european american","i don't know","sometimes","sometimes","sometimes","rarely",8.5,12,16,"8-10 hrs","8-10 hrs","10 min or less",2.28571428571429
+"8","14 years","female","hispanic or latino","more than one race","yes","often","sometimes","rarely","rarely",7.92000007629395,9.5,19,"8-10 hrs","6-8 hrs","20-30 min",3
+"7","12 years","female","hispanic or latino","more than one race","no","rarely","never","rarely","never",9,9.84000015258789,13,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","13 years","male","non-hispanic or latino","unknown","i don't know","i don't know","i don't know","i don't know","i don't know",7.5,10,10,"8-10 hrs","6-8 hrs","20-30 min",NA
+"8","13 years","male","unknown/refused","more than one race","i don't know","rarely","rarely","rarely","rarely",8,9,21,"8-10 hrs","8-10 hrs",NA,3
+"7","12 years","male","unknown/refused","unknown","yes","sometimes","never","rarely","rarely",9.25,10,17,"8-10 hrs","8-10 hrs","20-30 min",3
+"8","13 years","female","non-hispanic or latino","white or european american","no","sometimes","often","sometimes","rarely",9,9,11,"8-10 hrs","8-10 hrs","20-30 min",2
+"8","13 years","female","non-hispanic or latino","more than one race","no","often","sometimes","often","rarely",6,10.0799999237061,18,"6 hrs or less","6 hrs or less","20-30 min",3
+"8","14 years","male","unknown/refused","more than one race","yes","sometimes","sometimes","sometimes","rarely",5,11,12,"6-8 hrs","6 hrs or less","20-30 min",NA
+"7","13 years","male","non-hispanic or latino","white or european american","i don't know","rarely","sometimes","never","never",6,9,19,"6-8 hrs","6 hrs or less","10 min or less",3
+"8","13 years","male","non-hispanic or latino","american indian/alaska native","yes","sometimes","never","rarely","rarely",9.5,11,12,"8-10 hrs","8-10 hrs","10 min or less",2.28571428571429
+"7","12 years","male","unknown/refused","more than one race","no","sometimes","rarely","sometimes","rarely",8.75,9,22,"8-10 hrs","8-10 hrs","20-30 min",3
+"8","13 years","male","unknown/refused","unknown","i don't know","often","sometimes","rarely","often",8.5,9,11,"8-10 hrs","8-10 hrs",NA,3
+"8","13 years","male","non-hispanic or latino","more than one race","yes","sometimes","never","never","never",8.15999984741211,11.5,13,"8-10 hrs","8-10 hrs",NA,3
+"7","12 years","male","hispanic or latino","unknown","yes","rarely","sometimes","rarely","never",9.5,9,12,"8-10 hrs","8-10 hrs",NA,2.42857142857143
+"7","12 years","female","hispanic or latino","more than one race","i don't know","often","sometimes","sometimes","rarely",9,11.5,16,"8-10 hrs","8-10 hrs","10 min or less",2.28571428571429
+"8","13 years","male","unknown/refused","black or african american","yes","i don't know","i don't know","i don't know","i don't know",9,10,23,"8-10 hrs","8-10 hrs",NA,0.285714285714286
+"8","14 years","male","hispanic or latino","unknown","yes","often","sometimes","often","sometimes",8,9,16,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","12 years","male","non-hispanic or latino","american indian/alaska native","yes","never","never","never","never",9,6,12,"8-10 hrs","8-10 hrs",NA,2
+"8","13 years","female","non-hispanic or latino","white or european american","yes","rarely","sometimes","rarely","rarely",8.5,11.5,17,"8-10 hrs","8-10 hrs","10 min or less",1.28571428571429
+"7","13 years","male","hispanic or latino","more than one race","i don't know","often","rarely","sometimes","rarely",7.5,8,12,"6-8 hrs","6-8 hrs",NA,3
+"8","13 years","female","non-hispanic or latino","white or european american","yes","sometimes","never","sometimes","never",9.5,9,7,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","14 years","female","unknown/refused","more than one race","yes","sometimes","rarely","sometimes","never",7.5,10.8400001525879,16,"8-10 hrs","6-8 hrs",NA,3
+"8","13 years","male","non-hispanic or latino","unknown","yes","sometimes","often","sometimes","sometimes",9.5,10,22,"8-10 hrs","8-10 hrs","10 min or less",2.71428571428571
+"7","12 years","female","hispanic or latino","more than one race","no","rarely","never","never","never",9.5,9.5,9,"8-10 hrs","8-10 hrs","20-30 min",2.28571428571429
+"8","13 years","female","non-hispanic or latino","white or european american","no","often","often","rarely","rarely",8.5,8.67000007629395,18,"8-10 hrs","8-10 hrs",">60 min",NA
+"8","13 years","female","unknown/refused","more than one race","i don't know","rarely","never","never","never",8.67000007629395,7,13,"8-10 hrs","8-10 hrs",NA,3
+"8","13 years","male","unknown/refused","white or european american","i don't know","rarely","sometimes","sometimes","never",8.5,5,17,"6-8 hrs","8-10 hrs",NA,3
+"7","12 years","male","non-hispanic or latino","white or european american","i don't know","rarely","rarely","rarely","never",9.5,10,18,"8-10 hrs","8-10 hrs","10 min or less",0.857142857142857
+"8","13 years","female","non-hispanic or latino","white or european american","yes","often","sometimes","rarely","rarely",8.5,10,18,"8-10 hrs","8-10 hrs","20-30 min",2.28571428571429
+"8","13 years","male","unknown/refused","unknown","yes","sometimes","never","sometimes","never",8.5,9.5,27,"8-10 hrs","8-10 hrs","20-30 min",3
+"7","13 years","male","unknown/refused","white or european american","no","sometimes","sometimes","rarely","never",9.15999984741211,8,10,"8-10 hrs","8-10 hrs","20-30 min",3
+"8","13 years","male","non-hispanic or latino","more than one race","no","sometimes","never","never","never",6.75,11,16,"8-10 hrs","6-8 hrs","10 min or less",3
+"7","12 years","female","hispanic or latino","unknown","yes","sometimes","sometimes","i don't know","rarely",8.75,10,22,"8-10 hrs","8-10 hrs",NA,2
+"8","13 years","female","non-hispanic or latino","more than one race","no","sometimes","rarely","rarely","never",9.5,8.15999984741211,NA,"8-10 hrs","8-10 hrs","10 min or less",2.28571428571429
+"7","12 years","female","unknown/refused","unknown","yes","sometimes","often","never","never",8.25,9.5,12,"8-10 hrs","8-10 hrs",NA,1.28571428571429
+"8","13 years","female","non-hispanic or latino","white or european american","no","sometimes","rarely","sometimes","rarely",8,9,14,"8-10 hrs","8-10 hrs","10 min or less",NA
+"7","13 years","female","non-hispanic or latino","white or european american","yes","sometimes","sometimes","rarely","i don't know",7,8.34000015258789,11,"6-8 hrs","6-8 hrs","20-30 min",3
+"8","13 years","female","hispanic or latino","white or european american","no","sometimes","rarely","rarely","never",8.5,9.75,15,"8-10 hrs","8-10 hrs","10 min or less",3
+"7","13 years","male","hispanic or latino","more than one race","no","often","sometimes","sometimes","sometimes",9.25,9.5,22,"8-10 hrs","8-10 hrs","20-30 min",3
+"8","13 years","female","hispanic or latino","more than one race","yes","often","never","never","never",7.5,7.40999984741211,9,"6-8 hrs","6-8 hrs","20-30 min",3
+"7","13 years","male","non-hispanic or latino","white or european american","yes","often","rarely","never","sometimes",8.80000019073486,8.5,22,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","14 years","female","unknown/refused","more than one race","yes","never","sometimes","never","never",6.57999992370605,9,22,"6-8 hrs","6-8 hrs",NA,NA
+"7","12 years","female","hispanic or latino","american indian/alaska native","no","often","sometimes","often","sometimes",6.67000007629395,7.5,25,"6-8 hrs","6-8 hrs",">60 min",2
+"7","13 years","male","unknown/refused","american indian/alaska native","yes","sometimes","never","never","never",8.5,6,9,"6-8 hrs","8-10 hrs","10 min or less",3
+"8","13 years","male","non-hispanic or latino","white or european american","yes","sometimes","rarely","rarely","never",9.15999984741211,10.1599998474121,7,"8-10 hrs","8-10 hrs","20-30 min",2
+"7","12 years","male","non-hispanic or latino","white or european american","yes","often","rarely","sometimes","rarely",11,9.5,18,"More than 10 hrs","More than 10 hrs","20-30 min",3
+"7","12 years","male","non-hispanic or latino","white or european american","i don't know","i don't know","i don't know","i don't know","i don't know",8.75,10,16,"8-10 hrs","8-10 hrs","40-60 min",3
+"7","13 years","female","unknown/refused","more than one race","yes","never","rarely","sometimes","often",6.25,11,18,"6-8 hrs","6-8 hrs",">60 min",1
+"7","12 years","female","non-hispanic or latino","white or european american","yes","sometimes","rarely","never","never",8.75,8.5,6,"8-10 hrs","8-10 hrs",">60 min",1
+"8","14 years","male","hispanic or latino","unknown","yes","rarely","never","never","rarely",8.5,7,16,"8-10 hrs","8-10 hrs",">60 min",3
+"7","13 years","male","non-hispanic or latino","black or african american","no","sometimes","rarely","sometimes","rarely",10,10.1599998474121,15,"8-10 hrs","8-10 hrs","10 min or less",2
+"7","12 years","male","non-hispanic or latino","more than one race","i don't know","never","never","never","rarely",8.63000011444092,11,NA,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","13 years","male","non-hispanic or latino","white or european american","yes","rarely","sometimes","rarely","never",8.5,9,16,"8-10 hrs","8-10 hrs",NA,3
+"8","13 years","female","non-hispanic or latino","white or european american","yes","rarely","never","sometimes","rarely",7.75,9.5,14,"8-10 hrs","6-8 hrs",">60 min",3
+"7","12 years","female","non-hispanic or latino","white or european american","yes","sometimes","rarely","never","never",8.25,6.5,15,"8-10 hrs","8-10 hrs","10 min or less",2
+"8","13 years","female","non-hispanic or latino","white or european american","yes","sometimes","sometimes","rarely","rarely",9,12,16,"8-10 hrs","8-10 hrs","10 min or less",1.57142857142857
+"7","12 years","male","non-hispanic or latino","more than one race","yes","rarely","never","rarely","never",8.30000019073486,10.5,12,"8-10 hrs","8-10 hrs","10 min or less",2.28571428571429
+"8","13 years","male","non-hispanic or latino","white or european american","yes","sometimes","rarely","never","never",8,11,17,"8-10 hrs","8-10 hrs","20-30 min",3
+"8","13 years","female","non-hispanic or latino","more than one race","no","sometimes","never","rarely","never",9.5,9.5,8,"8-10 hrs","8-10 hrs","10 min or less",2.28571428571429
+"7","12 years","male","unknown/refused","more than one race","i don't know","often","often","often","rarely",10,10,19,"8-10 hrs","8-10 hrs","20-30 min",0.714285714285714
+"8","13 years","female","non-hispanic or latino","more than one race","yes","sometimes","rarely","rarely","never",7,12.5,15,"8-10 hrs","6-8 hrs","20-30 min",3
+"7","12 years","female","hispanic or latino","more than one race","no","sometimes","sometimes","rarely","never",10,9.5,13,"8-10 hrs","8-10 hrs",NA,3
+"7","12 years","female","hispanic or latino","unknown","yes","sometimes","rarely","never","never",8.75,8,20,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","13 years","female","non-hispanic or latino","american indian/alaska native","no","sometimes","never","never","rarely",8.80000019073486,11,18,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","13 years","male","non-hispanic or latino","black or african american","yes","i don't know","i don't know","i don't know","i don't know",10,10,23,"8-10 hrs","8-10 hrs","20-30 min",0
+"8","13 years","male","unknown/refused","white or european american","no","rarely","rarely","sometimes","rarely",NA,10.5,16,NA,"6 hrs or less",NA,2.28571428571429
+"8","13 years","male","unknown/refused","unknown","yes","i don't know","i don't know","sometimes","never",7.5,8,2,"6-8 hrs","6-8 hrs","10 min or less",0.571428571428571
+"8","13 years","male","non-hispanic or latino","more than one race","no","sometimes","often","rarely","never",8.5,10,13,"8-10 hrs","8-10 hrs","10 min or less",2.28571428571429
+"7","12 years","female","hispanic or latino","more than one race","no","often","sometimes","rarely","never",9,7.5,10,"8-10 hrs","8-10 hrs","20-30 min",2.71428571428571
+"8","13 years","female","unknown/refused","unknown","yes","sometimes","often","never","rarely",8.15999984741211,8.5,24,"8-10 hrs","8-10 hrs",NA,1
+"8","13 years","male","unknown/refused","unknown","i don't know","often","rarely","sometimes","sometimes",9,11,11,"8-10 hrs","8-10 hrs",NA,2.28571428571429
+"8","13 years","female","hispanic or latino","more than one race","yes","sometimes","rarely","sometimes","rarely",6.5,11,14,NA,"6-8 hrs","10 min or less",3
+"7","13 years","male","unknown/refused","more than one race","yes","often","never","never","sometimes",8.80000019073486,9,19,"8-10 hrs","8-10 hrs","10 min or less",2
+"7","12 years","male","hispanic or latino","more than one race","yes","sometimes","often","sometimes","often",8.75,9,26,"8-10 hrs","8-10 hrs","20-30 min",2
+"8","13 years","female","non-hispanic or latino","white or european american","yes","often","rarely","never","never",9.75,11.1700000762939,8,"More than 10 hrs","8-10 hrs","20-30 min",0.714285714285714
+"8","13 years","female","non-hispanic or latino","white or european american","no","sometimes","sometimes","rarely","rarely",8.5,9,26,"More than 10 hrs","8-10 hrs",">60 min",2.28571428571429
+"7","12 years","female","non-hispanic or latino","more than one race","yes","often","never","never","never",7,5,7,"6-8 hrs","6-8 hrs",NA,3
+"7","12 years","male","hispanic or latino","more than one race","yes","sometimes","never","rarely","never",9,10.5,10,"8-10 hrs","8-10 hrs","10 min or less",3
+"8","13 years","male","non-hispanic or latino","white or european american","no","sometimes","rarely","sometimes","never",6.5,11,17,"8-10 hrs","6-8 hrs","10 min or less",2.28571428571429
+"7","13 years","male","non-hispanic or latino","more than one race","i don't know","sometimes","rarely","sometimes","rarely",6.5,11,19,"6-8 hrs","6-8 hrs","10 min or less",2.28571428571429

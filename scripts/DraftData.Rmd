@@ -1,0 +1,23 @@
+---
+title: "DraftDataScript"
+author: "Heather Leonard"
+date: "11/13/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(rio)
+library(tidyverse)
+library(here)
+library(janitor)
+
+```
+```{r}
+synthdata <- read.csv(here ("data", "synthdata.csv")) %>%
+  as_tibble()
+```
+
