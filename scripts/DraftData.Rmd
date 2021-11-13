@@ -21,3 +21,25 @@ synthdata <- read.csv(here ("data", "synthdata.csv")) %>%
   as_tibble()
 ```
 
+Final project must use the following functions: pivot_longer(), select(), filter(), mutate(), pivot_wider(), group_by(), and summarize().
+
+Research question: Is internet overuse associated with sleep outcomes (total sleep, daytime sleepiness) in adolescents?
+
+covariates: dm_childage_bl, dm_sex_bl, dm_lunch_bl 
+
+1. select() and filter() will be used for narrowing down data to the variables we want
+2. recode io variables will use mutate()
+3. record age variable will use mutate()
+4. create the composite score for io variables
+5. in ggplot we can use group_by()
+6. summarize() by making a descriptives/summary table, possibly use pivots
+
+
+Make composite score for internet overuse, using variables io1_bl, io2_bl, io3_bl, and io4_bl. Levels include never, rarely, sometimes, often; 0-3 scores with composite range of 0-12.
+```{r}
+mutate
+```
+
+
+
+
