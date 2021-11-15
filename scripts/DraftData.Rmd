@@ -1,6 +1,6 @@
 ---
 title: "DraftDataScript"
-author: "Heather Leonard"
+author: "Heather Leonard" "Abbie Sanders" "Rebecca Gordon" 
 date: "11/13/2021"
 output: html_document
 ---
@@ -35,9 +35,19 @@ covariates: dm_childage_bl, dm_sex_bl, dm_lunch_bl
 6. summarize() by making a descriptives/summary table, possibly use pivots
 
 
-Make composite score for internet overuse, using variables io1_bl, io2_bl, io3_bl, and io4_bl. Levels include never, rarely, sometimes, often; 0-3 scores with composite range of 0-12.
-```{r}
-mutate
+Make composite score for internet overuse, using variables io1_bl, io2_bl, io3_bl, and io4_bl. Levels include i don't know, never, rarely, sometimes, often, (1-5); new code is 0-4 scores with composite range of 0-16.
+```{r, Abbie}
+#recode internet overuse score and create a composite score 
+synthdata <- synthdata %>%
+  mutate(io1_RC = recode(io1_bl, "i don't know" = 0, "never" = 1, "often" = 2, "rarely" = 3, "sometimes" = 4))%>%
+  mutate(io2_RC = recode(io2_bl, "i don't know" = 0, "never" = 1, "often" = 2, "rarely" = 3, "sometimes" = 4)) %>%
+  mutate(io3_RC = recode(io3_bl, "i don't know" = 0, "never" = 1, "often" = 2, "rarely" = 3, "sometimes" = 4)) %>%
+  mutate(io4_RC = recode(io4_bl, "i don't know" = 0, "never" = 1, "often" = 2, "rarely" = 3, "sometimes" = 4)) %>%
+  mutate(io_comp = io1_RC + io2_RC + io3_RC + io4_RC)
+
+#recode age
+synthdata$age_RC <- as.numeric(str_sub(synthdata$dm_childage_bl, 1,2)) 
+
 ```
 
 
