@@ -58,6 +58,17 @@ synthdata$age_RC <- as.numeric(str_sub(synthdata$dm_childage_bl, 1,2))
 
 ```
 
+```{r pivotlonger-to-tidy-iodata}
+synthdata %>%
+  select(1:6, io1_RC:io4_RC)  %>%
+  pivot_longer(
+    cols = starts_with("io"),
+    names_to = "item",
+    values_to = "response"
+  )
+```
+
+
 ```{r}
 #just playing around with pivotlonger here to see if we could come up with anything. it didn't work well. Need to come up with something.
 synthdata %>% 
