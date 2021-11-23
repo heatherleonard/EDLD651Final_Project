@@ -1,19 +1,26 @@
 ---
 title: "DraftDataScript"
-author: "Heather Leonard" "Abbie Sanders" "Rebecca Gordon" 
-date: "11/13/2021"
-output: html_document
+author: "Heather Leonard, Abbie Sanders, and Rebecca Gordon" 
+date: "11/18/2021"
+output: 
+  html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+```{r}
+#installing gtsummary to help with creating summary tables
+#install.packages("gtsummary")
+```
+
 
 ```{r}
 library(rio)
 library(tidyverse)
 library(here)
 library(janitor)
+library(gtsummary)
 
 ```
 ```{r}
@@ -21,11 +28,12 @@ synthdata <- read.csv(here ("data", "synthdata.csv")) %>%
   as_tibble()
 ```
 
+Notes for working on final project:
 Final project must use the following functions: pivot_longer(), select(), filter(), mutate(), pivot_wider(), group_by(), and summarize().
 
 Research question: Is internet overuse associated with sleep outcomes (total sleep, daytime sleepiness) in adolescents?
 
-covariates: dm_childage_bl, dm_sex_bl, dm_lunch_bl 
+possible covariates: dm_childage_bl, dm_sex_bl, dm_lunch_bl 
 
 1. select() and filter() will be used for narrowing down data to the variables we want
 2. recode io variables will use mutate()
@@ -34,9 +42,9 @@ covariates: dm_childage_bl, dm_sex_bl, dm_lunch_bl
 5. in ggplot we can use group_by()
 6. summarize() by making a descriptives/summary table, possibly use pivots
 
-
 Make composite score for internet overuse, using variables io1_bl, io2_bl, io3_bl, and io4_bl. Levels include i don't know, never, rarely, sometimes, often, (1-5); new code is 0-4 scores with composite range of 0-16.
-```{r, Abbie}
+
+```{r abbie}
 #recode internet overuse score and create a composite score 
 synthdata <- synthdata %>%
   mutate(io1_RC = recode(io1_bl, "i don't know" = 0, "never" = 1, "often" = 2, "rarely" = 3, "sometimes" = 4))%>%
@@ -50,6 +58,7 @@ synthdata$age_RC <- as.numeric(str_sub(synthdata$dm_childage_bl, 1,2))
 
 ```
 
+<<<<<<< HEAD
 ```{r, Rebecca_ggplot}
 
 #Removes all "i don't know" values
@@ -62,6 +71,70 @@ synthdata %>%
   geom_smooth(method = "lm") +
   facet_wrap(~dm_lunch_bl) +
   labs(title = 'Relation between internet overuse and age', subtitle = 'Scatter plot by welfare status', x = 'Internet Overuse score', y = 'Student age', color = 'Age')
+=======
+```{r pivotlonger-to-tidy-iodata}
+synthdata %>%
+  select(1:6, io1_RC:io4_RC)  %>%
+  pivot_longer(
+    cols = starts_with("io"),
+    names_to = "item",
+    values_to = "response"
+  )
+```
+
+
+```{r}
+#just playing around with pivotlonger here to see if we could come up with anything. it didn't work well. Need to come up with something.
+synthdata %>% 
+  pivot_longer(cols = grade, names_to = "variables", values_to = "answers")
+```
+
+```{r grouping-and-summarizing}
+synthdata %>% 
+  group_by(dm_sex_bl) %>% 
+  summarise(mean_io = mean(io_comp))
+```
+
+
+```{r grouping-and-summarizing-using-pivot-wider}
+synthdata %>% 
+  group_by(dm_sex_bl) %>% 
+  summarise(mean_io = mean(io_comp)) %>% 
+  pivot_wider(names_from = dm_sex_bl, values_from = mean_io)
+```
+
+
+```{r summary-table-of-all-variables}
+#this makes a giant table of all variables
+synthdata %>% 
+  tbl_summary()
+```
+
+```{r filter-characteristics-by-sex-and-show-pvalues}
+#this will split out the characteristics by sex and add p value with second line. filtered out one gender answer of "other." 
+synthdata %>% 
+  filter(dm_sex_bl != "other") %>% 
+  tbl_summary(by = dm_sex_bl) %>% 
+  add_p()
+```
+
+```{r select-specific-variables-for-summary-table-with-pvalues}
+synthdata %>% 
+  select(sl_avgsleepcat_bl, io_comp) %>% 
+  tbl_summary(by = sl_avgsleepcat_bl) %>% 
+  add_p()
+```
+
+```{r select-sdifferent-variables-for-summary-table-with-pvalues}
+synthdata %>% 
+  select(sl_bedmedia_bl, io_comp) %>% 
+  tbl_summary(by = sl_bedmedia_bl) %>% 
+  add_p()
+```
+```{r correlation-of-bedtime-media-use-and-internet-overuse}
+#answer to our research question: positive relationship that is very very small
+cor(synthdata$sl_bedmedia_bl, synthdata$io_comp, method = "pearson", use = "complete.obs")
+>>>>>>> main
 ```
 
 
