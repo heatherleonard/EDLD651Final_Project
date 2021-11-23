@@ -137,5 +137,16 @@ cor(synthdata$sl_bedmedia_bl, synthdata$io_comp, method = "pearson", use = "comp
 >>>>>>> main
 ```
 
+```{r, Rebecca-ggplot}
 
+#Removes all "i don't know" values
+synthdata <- synthdata %>% 
+filter(synthdata$age_RC != "i don't know" & synthdata$dm_lunch_bl != "i don't know")
+
+synthdata %>% 
+  ggplot(aes(io_comp, age_RC)) +
+  geom_jitter(aes(color = age_RC)) +
+  geom_smooth(method = "lm") +
+  facet_wrap(~dm_lunch_bl) +
+  labs(title = 'Relation between internet overuse and age', subtitle = 'Scatter plot by welfare status', x = 'Internet Overuse score', y = 'Student age', color = 'Age')
 
