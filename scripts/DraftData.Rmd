@@ -71,14 +71,15 @@ synthdata %>%
   geom_smooth(method = "lm") +
   facet_wrap(~dm_lunch_bl) +
   labs(title = 'Relation between internet overuse and age', subtitle = 'Scatter plot by welfare status', x = 'Internet Overuse score', y = 'Student age', color = 'Age')
-=======
+```
+
 ```{r pivotlonger-to-tidy-iodata}
 synthdata %>%
   select(1:6, io1_RC:io4_RC)  %>%
   pivot_longer(
     cols = starts_with("io"),
-    names_to = "item",
-    values_to = "response"
+    names_to = "variables",
+    values_to = "answers"
   )
 ```
 
@@ -134,7 +135,6 @@ synthdata %>%
 ```{r correlation-of-bedtime-media-use-and-internet-overuse}
 #answer to our research question: positive relationship that is very very small
 cor(synthdata$sl_bedmedia_bl, synthdata$io_comp, method = "pearson", use = "complete.obs")
->>>>>>> main
 ```
 
 
