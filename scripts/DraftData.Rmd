@@ -53,10 +53,14 @@ synthdata <- synthdata %>%
   mutate(io4_RC = recode(io4_bl, "i don't know" = 0, "never" = 1, "often" = 2, "rarely" = 3, "sometimes" = 4)) %>%
   mutate(io_comp = io1_RC + io2_RC + io3_RC + io4_RC)
 
+# Great job at including this all in one full code (using pipes); it makes it easy to understand.
+
 #recode age
 synthdata$age_RC <- as.numeric(str_sub(synthdata$dm_childage_bl, 1,2)) 
 
 ```
+<!-- Great use of "$" above. We did not do this in our script, we wrote everything out 'longhand'. We will probably re-write our code using this format to simplify and shorten code chunks
+-->
 
 <<<<<<< HEAD
 ```{r, Rebecca_ggplot}
@@ -71,6 +75,7 @@ synthdata %>%
   geom_smooth(method = "lm") +
   facet_wrap(~dm_lunch_bl) +
   labs(title = 'Relation between internet overuse and age', subtitle = 'Scatter plot by welfare status', x = 'Internet Overuse score', y = 'Student age', color = 'Age')
+# I would consider changing the dimensions of the visualization to make a bit wider; while also expanding the range of x-axis values. I think it would make the smooth line more telling for the viewer.
 ```
 
 ```{r pivotlonger-to-tidy-iodata}
@@ -81,8 +86,13 @@ synthdata %>%
     names_to = "variables",
     values_to = "answers"
   )
+# Did this do anything to the dataframe? Are you saving this as an object/new dataframe to use? Or is this just to show using pivot-longer?
 ```
 
+<!-- If you are trying to find a way to use pivot_longer() . . . Maybe use it for the responses to the different responses for sleep. I do not know your data well (or what many of the variables represent) but it seems that could be an easy way to show sleep by different times during the week.
+OR
+Could use to combine the race/ethnicity variables into a string under a single variable?
+-->
 
 ```{r}
 #just playing around with pivotlonger here to see if we could come up with anything. it didn't work well. Need to come up with something.
@@ -92,8 +102,9 @@ synthdata %>%
 
 ```{r grouping-and-summarizing}
 synthdata %>% 
-  group_by(dm_sex_bl) %>% 
+  group_by(dm_sex_bl, dm_childage_bl) %>% 
   summarise(mean_io = mean(io_comp))
+# I added dm_childage_bl to this table. Not that it is really needed, but it gives a bit more information regarding differences based upon age.
 ```
 
 
@@ -102,6 +113,8 @@ synthdata %>%
   group_by(dm_sex_bl) %>% 
   summarise(mean_io = mean(io_comp)) %>% 
   pivot_wider(names_from = dm_sex_bl, values_from = mean_io)
+
+# Not sure of this summary will be useful since it tells the same information as your previous code-chunk in a less descriptive way.
 ```
 
 
@@ -109,6 +122,7 @@ synthdata %>%
 #this makes a giant table of all variables
 synthdata %>% 
   tbl_summary()
+# This is an awesome function that I am totally going to use in my team's project. I would suggest renaming all of the variable names to what they actually represent so there is no issue with interpretation.
 ```
 
 ```{r filter-characteristics-by-sex-and-show-pvalues}
@@ -117,6 +131,8 @@ synthdata %>%
   filter(dm_sex_bl != "other") %>% 
   tbl_summary(by = dm_sex_bl) %>% 
   add_p()
+
+# again... awesome summary table that includes a p-value. Very simple but tells the whole picture of the data. Well done. My same note as above regarding variable names.
 ```
 
 ```{r select-specific-variables-for-summary-table-with-pvalues}
@@ -135,6 +151,8 @@ synthdata %>%
 ```{r correlation-of-bedtime-media-use-and-internet-overuse}
 #answer to our research question: positive relationship that is very very small
 cor(synthdata$sl_bedmedia_bl, synthdata$io_comp, method = "pearson", use = "complete.obs")
+
+# Awesome way to get at your research question, though I still do not know what the variable names represent. My one overarching comment is to rename the variables to understandable names for an unaware audience.
 ```
 
 
