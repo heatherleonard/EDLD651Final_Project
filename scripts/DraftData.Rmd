@@ -28,21 +28,30 @@ synthdata <- read.csv(here ("data", "synthdata.csv")) %>%
   as_tibble()
 ```
 
-Notes for working on final project:
-Final project must use the following functions: pivot_longer(), select(), filter(), mutate(), pivot_wider(), group_by(), and summarize().
+## Notes for working on final project:
+### Final project must use the following functions: pivot_longer(), select(), filter(), mutate(), pivot_wider(), group_by(), and summarize().
 
-Research question: Is internet overuse associated with sleep outcomes (total sleep, daytime sleepiness) in adolescents?
+## Research question: Is internet overuse associated with sleep outcomes (total sleep, daytime sleepiness) in adolescents?
 
-possible covariates: dm_childage_bl, dm_sex_bl, dm_lunch_bl 
+### Covariates: 
+
+#### Child age:
+- dm_childage_bl
+#### Child sex:
+- dm_sex_bl
+#### Welfare status:
+- dm_lunch_bl 
+
+### Steps:
 
 1. select() and filter() will be used for narrowing down data to the variables we want
 2. recode io variables will use mutate()
 3. record age variable will use mutate()
 4. create the composite score for io variables
-5. in ggplot we can use group_by()
+5. in ggplot,  we can examine the relation between internet overuse and age by welfare status
 6. summarize() by making a descriptives/summary table, possibly use pivots
 
-Make composite score for internet overuse, using variables io1_bl, io2_bl, io3_bl, and io4_bl. Levels include i don't know, never, rarely, sometimes, often, (1-5); new code is 0-4 scores with composite range of 0-16.
+### Make composite score for internet overuse, using variables io1_bl, io2_bl, io3_bl, and io4_bl. Levels include i don't know, never, rarely, sometimes, often, (1-5); new code is 0-4 scores with composite range of 0-16.
 
 ```{r abbie}
 #recode internet overuse score and create a composite score 
@@ -58,20 +67,6 @@ synthdata$age_RC <- as.numeric(str_sub(synthdata$dm_childage_bl, 1,2))
 
 ```
 
-<<<<<<< HEAD
-```{r, Rebecca_ggplot}
-
-#Removes all "i don't know" values
-synthdata <- synthdata %>% 
-filter(synthdata$age_RC != "i don't know" & synthdata$dm_lunch_bl != "i don't know")
-
-synthdata %>% 
-  ggplot(aes(io_comp, age_RC)) +
-  geom_jitter(aes(color = age_RC)) +
-  geom_smooth(method = "lm") +
-  facet_wrap(~dm_lunch_bl) +
-  labs(title = 'Relation between internet overuse and age', subtitle = 'Scatter plot by welfare status', x = 'Internet Overuse score', y = 'Student age', color = 'Age')
-```
 
 ```{r pivotlonger-to-tidy-iodata}
 synthdata %>%
@@ -149,4 +144,9 @@ synthdata %>%
   geom_smooth(method = "lm") +
   facet_wrap(~dm_lunch_bl) +
   labs(title = 'Relation between internet overuse and age', subtitle = 'Scatter plot by welfare status', x = 'Internet Overuse score', y = 'Student age', color = 'Age')
+
+synthdata %>% 
+  ggplot(aes(io_comp, sl_avgsleepcat_bl)) +
+  geom_jitter(aes(color = age_RC)) +
+  labs(title = 'Relation between internet overuse and Average Hours of sleep', x = 'Internet Overuse score', y = 'Hours of sleep', color = 'Age')
 
