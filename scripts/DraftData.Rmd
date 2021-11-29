@@ -9,6 +9,8 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+I'd add a space between these code chunks for visual clarity :) 
+
 ```{r}
 #installing gtsummary to help with creating summary tables
 #install.packages("gtsummary")
@@ -44,6 +46,8 @@ possible covariates: dm_childage_bl, dm_sex_bl, dm_lunch_bl
 
 Make composite score for internet overuse, using variables io1_bl, io2_bl, io3_bl, and io4_bl. Levels include i don't know, never, rarely, sometimes, often, (1-5); new code is 0-4 scores with composite range of 0-16.
 
+I would add a header for the research question!
+
 ```{r abbie}
 #recode internet overuse score and create a composite score 
 synthdata <- synthdata %>%
@@ -57,6 +61,8 @@ synthdata <- synthdata %>%
 synthdata$age_RC <- as.numeric(str_sub(synthdata$dm_childage_bl, 1,2)) 
 
 ```
+
+wow nicely done! This r abbie chunk looks beautiful!
 
 <<<<<<< HEAD
 ```{r, Rebecca_ggplot}
@@ -73,6 +79,10 @@ synthdata %>%
   labs(title = 'Relation between internet overuse and age', subtitle = 'Scatter plot by welfare status', x = 'Internet Overuse score', y = 'Student age', color = 'Age')
 ```
 
+
+For the title, I would consider changing relation to relationship, and capitalizing the other applicable words! Is the "no" and "yes" referring to receiving or not receiving welfare? It might be a bit clearer if it said "receives", "Does not receive" BUT that is totally personal preference, and I wouldn't even know how to do that! The graph  is BEAUTIFUL and I could look at it forever. NICELY DONE!!!!
+
+
 ```{r pivotlonger-to-tidy-iodata}
 synthdata %>%
   select(1:6, io1_RC:io4_RC)  %>%
@@ -83,6 +93,7 @@ synthdata %>%
   )
 ```
 
+The pivoting above is beautiful!! I might add the prefix "dm_" to get rid of the "dm_" before the category names in the columns. 
 
 ```{r}
 #just playing around with pivotlonger here to see if we could come up with anything. it didn't work well. Need to come up with something.
@@ -90,12 +101,15 @@ synthdata %>%
   pivot_longer(cols = grade, names_to = "variables", values_to = "answers")
 ```
 
+I saw your comment about still working on this one above but it's a great start!!!
+
 ```{r grouping-and-summarizing}
 synthdata %>% 
   group_by(dm_sex_bl) %>% 
   summarise(mean_io = mean(io_comp))
 ```
 
+Oh that's super interesting! It would be really cool to see the mean broken down by race/ethnicity as well!
 
 ```{r grouping-and-summarizing-using-pivot-wider}
 synthdata %>% 
@@ -104,12 +118,15 @@ synthdata %>%
   pivot_wider(names_from = dm_sex_bl, values_from = mean_io)
 ```
 
+Nicely done!!! 
 
 ```{r summary-table-of-all-variables}
 #this makes a giant table of all variables
 synthdata %>% 
   tbl_summary()
 ```
+
+That is an awesome table! I really like being able to see the percentages like that! It also makes the data readable to non-experts and non-r users :) 
 
 ```{r filter-characteristics-by-sex-and-show-pvalues}
 #this will split out the characteristics by sex and add p value with second line. filtered out one gender answer of "other." 
@@ -119,6 +136,8 @@ synthdata %>%
   add_p()
 ```
 
+This was easy to read and fun to see p values! Nice work!!
+
 ```{r select-specific-variables-for-summary-table-with-pvalues}
 synthdata %>% 
   select(sl_avgsleepcat_bl, io_comp) %>% 
@@ -126,12 +145,16 @@ synthdata %>%
   add_p()
 ```
 
+
 ```{r select-sdifferent-variables-for-summary-table-with-pvalues}
 synthdata %>% 
   select(sl_bedmedia_bl, io_comp) %>% 
   tbl_summary(by = sl_bedmedia_bl) %>% 
   add_p()
 ```
+
+I would split this code chunk like I just did with this comment. Especially because you are answering your research question, I think it'll be clearer and also look nice to have a header here and for it to have it's own section :) 
+
 ```{r correlation-of-bedtime-media-use-and-internet-overuse}
 #answer to our research question: positive relationship that is very very small
 cor(synthdata$sl_bedmedia_bl, synthdata$io_comp, method = "pearson", use = "complete.obs")
@@ -149,4 +172,8 @@ synthdata %>%
   geom_smooth(method = "lm") +
   facet_wrap(~dm_lunch_bl) +
   labs(title = 'Relation between internet overuse and age', subtitle = 'Scatter plot by welfare status', x = 'Internet Overuse score', y = 'Student age', color = 'Age')
+```
 
+I added the ticks at the end of this last chunk so that it would run! Looks like the same graph as earlier. Again, it is beautiful. Nicely done you guys!! Please let me know if there's anything I can do to help! I doubt you'll need anything though :) 
+
+Three strengths in this assignment are the graphs, the pivoting, and the general visualizations of the data! I learned how to get a summary table with percentages, and I am hoping to maybe include that in my own project now! I think adding some headers will help organize that script for when it's knitted! I also think writing in what the research question is at the beginning of the project would be helpful! 
