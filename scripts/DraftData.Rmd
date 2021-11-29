@@ -21,7 +21,7 @@ library(tidyverse)
 library(here)
 library(janitor)
 library(gtsummary)
-
+library(expss)
 ```
 ```{r}
 synthdata <- read.csv(here ("data", "synthdata.csv")) %>%
@@ -35,11 +35,11 @@ synthdata <- read.csv(here ("data", "synthdata.csv")) %>%
 
 ### Covariates: 
 
-#### Child age:
+### Child age:
 - dm_childage_bl
-#### Child sex:
+### Child sex:
 - dm_sex_bl
-#### Welfare status:
+### Welfare status:
 - dm_lunch_bl 
 
 ### Steps:
@@ -109,8 +109,10 @@ synthdata %>%
 ```{r filter-characteristics-by-sex-and-show-pvalues}
 #this will split out the characteristics by sex and add p value with second line. filtered out one gender answer of "other." 
 synthdata %>% 
-  filter(dm_sex_bl != "other") %>% 
-  tbl_summary(by = dm_sex_bl) %>% 
+  select(grade, dm_childage_bl, dm_sex_bl, dm_ethnic_bl, dm_lunch_bl, dm_race_bl, sl_sleepy_bl, sl_avgsleepcat_bl, io_comp) %>% 
+  apply_labels(synthdata, grade = "Grade", dm_childage_bl = "Age", dm_sex_bl = "Sex", dm_ethnic_bl = "Ethnicity", dm_lunch_bl = "Free/reduced Lunch", dm_race_bl = "Race", sl_sleepy_bl = "Daytime sleepiness Average", sl_avgsleepcat_bl = "Weekly hours of sleep per night", io_comp = " Mean Internet Overuse") %>%
+  tbl_summary(by = dm_sex_bl) %>%
+  bold_labels() %>%
   add_p()
 ```
 
