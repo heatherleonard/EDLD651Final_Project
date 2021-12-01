@@ -8,7 +8,10 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE,
+                      eval = TRUE,
+                      warning = FALSE,
+                      message = FALSE)
 ```
 ```{r}
 #installing gtsummary to help with creating summary tables
@@ -58,7 +61,7 @@ synthdata <- read.csv(here ("data", "synthdata.csv")) %>%
 ```{r abbie}
 #recode internet overuse score and create a composite score 
 synthdata <- synthdata %>%
-  mutate(io1_RC = recode(io1_bl, "i don't know" = 0, "never" = 1, "often" = 2, "rarely" = 3, "sometimes" = 4))%>%
+  mutate(io1_RC = recode(io1_bl, "i don't know" = 0, "never" = 1, "often" = 2, "rarely" = 3, "sometimes" = 4)) %>%
   mutate(io2_RC = recode(io2_bl, "i don't know" = 0, "never" = 1, "often" = 2, "rarely" = 3, "sometimes" = 4)) %>%
   mutate(io3_RC = recode(io3_bl, "i don't know" = 0, "never" = 1, "often" = 2, "rarely" = 3, "sometimes" = 4)) %>%
   mutate(io4_RC = recode(io4_bl, "i don't know" = 0, "never" = 1, "often" = 2, "rarely" = 3, "sometimes" = 4)) %>%
@@ -156,7 +159,7 @@ cor.test(synthdata$io_comp, synthdata$sl_sleepy_bl, method = "pearson", use = "c
 ```{r correlation-of-internet-overuse-and-welfare-status}
 #positive correlation that is very small
 
-cor.test(synthdata$io_comp, as.numeric(synthdata$dm_lunch_bl), method = "pearson", use = "complete.obs")
+cor.test(synthdata$io_comp,as.numeric(synthdata$dm_lunch_bl), method = "pearson", use = "complete.obs")
 
 
 ```
