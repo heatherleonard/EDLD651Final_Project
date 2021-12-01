@@ -5,6 +5,8 @@ date: "11/18/2021"
 output:
   html_document: default
   pdf_document: default
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -24,9 +26,11 @@ library(janitor)
 library(gtsummary)
 
 ```
+
 ```{r}
 synthdata <- read.csv(here ("data", "synthdata.csv")) %>%
-  as_tibble()
+  as_tibble() %>%
+  clean_names() #adding clean names in case variable names are wonky - Simone
 ```
 
 ## Notes for working on final project:
@@ -63,14 +67,16 @@ synthdata <- synthdata %>%
   mutate(io4_RC = recode(io4_bl, "i don't know" = 0, "never" = 1, "often" = 2, "rarely" = 3, "sometimes" = 4)) %>%
   mutate(io_comp = io1_RC + io2_RC + io3_RC + io4_RC)
 
+# nice work recoding items for your composite score  :) 
+
 #recode age
 synthdata$age_RC <- as.numeric(str_sub(synthdata$dm_childage_bl, 1,2)) 
+
 
 ```
 
 
 ```{r pivotlonger-to-tidy-iodata}
-synthdata %>%
   select(1:6, io1_RC:io4_RC)  %>%
   pivot_longer(
     cols = starts_with("io"),
@@ -98,6 +104,8 @@ synthdata %>%
   group_by(dm_sex_bl) %>% 
   summarise(mean_io = mean(io_comp)) %>% 
   pivot_wider(names_from = dm_sex_bl, values_from = mean_io)
+
+#Great application of pivot wider - I like the switch to columns for male, female, and other - SM
 ```
 
 
@@ -105,6 +113,19 @@ synthdata %>%
 #this makes a giant table of all variables
 synthdata %>% 
   tbl_summary()
+
+#Ooh I like this table summary - I actually have not used this before, and love the way the output visualizes. When I did the ?tbl_summary, it looks like you can add the qualifier statistic = list(variable ~ "{mean} ({sd})") to get some cool stats on a variable(s) of interest. There are also other stat options like "min", "max", etc. I coded a little example below for your data below. I think I'll use this tbl_summary function in my group's project :) 
+
+synthdata %>% 
+  select(age_RC, grade, io_comp) %>%
+  tbl_summary(
+    by = grade,
+    label = list(age_RC ~ "Child Age",
+                 io_comp ~ "Composite Score",
+                 grade ~ "Grade"),
+      statistic = list(all_continuous() ~c("{mean} ({sd})")))
+
+
 ```
 
 ```{r filter-characteristics-by-sex-and-show-pvalues}
@@ -124,19 +145,42 @@ synthdata %>%
              sl_sleepy_bl = "Average daytime sleepiness", 
              sl_avgsleepcat_bl = "Average weekly Hours of sleep per night", 
              io_comp = "Average internet overuse") 
+
 #renaming variables using select
 synthdata %>%
 select(Grade = grade, 
        Age = dm_childage_bl, 
        Sex = dm_sex_bl, 
        Ethnicity = dm_ethnic_bl, 
-       Free/reduced lunch = dm_lunch_bl, 
+       Free_reduced_lunch = dm_lunch_bl, 
        Race = dm_race_bl, 
-       Average daytime sleepiness = sl_sleepy_bl, 
-       Average weekly hours of sleep per night = sl_avgsleepcat_bl, 
-       Average internet overuse = io_comp) %>%
-  tbl_summary(by = dm_sex_bl) %>%
+       Average_daytime_sleepiness = sl_sleepy_bl, 
+       Average_weekly_hours_of_sleep_per_night = sl_avgsleepcat_bl, 
+       Average_internet_overuse = io_comp) %>%
+  tbl_summary(by = Sex) %>%
   bold_labels() 
+
+## to rename variables using "select", I added underscores to your new variable names, otherwise select won't work! My sense is you're aiming to change the names of these column titles for the purposes of your table summary, in which case, I'd suggest using the following code in your tbl-summary function below by = Sex (which is also changed bc you changed variable name from dm_sex_bl to Sex with select!). This also means you actually do not need to rename your columns with select if you can rename them for your table, unless you want to rename for bigger picture. 
+
+synthdata %>%
+select(grade, 
+       dm_childage_bl, 
+       dm_sex_bl, 
+       dm_ethnic_bl, 
+       Free_reduced_lunch = dm_lunch_bl, 
+       Race = dm_race_bl, 
+       Average_daytime_sleepiness = sl_sleepy_bl, 
+       Average_weekly_hours_of_sleep_per_night = sl_avgsleepcat_bl, 
+       io_comp) %>%
+  tbl_summary(by = dm_sex_bl,
+              label = list(grade ~ "Grade",
+                           dm_childage_bl ~ "Age",
+                           dm_sex_bl ~ "Sex",
+                           io_comp ~ "Average Internet Overuse",
+                           dm_ethnic_bl ~ "Ethnicity")) %>% #etc with your other variables!
+   bold_labels()
+
+## I also really like the way you used the qualifier bold_labels for the table - I think this is also something I will borrow for my table for my group's project. 
 ```
 
 ```{r select-specific-variables-for-summary-table-with-pvalues}
@@ -152,6 +196,7 @@ synthdata %>%
   tbl_summary(by = sl_bedmedia_bl) %>% 
   add_p()
 ```
+
 ```{r correlation-of-bedtime-media-use-and-internet-overuse}
 #answer to our research question: positive relationship that is very very small
 cor.test(synthdata$sl_bedmedia_bl, synthdata$io_comp, method = "pearson", use = "complete.obs")
@@ -185,6 +230,8 @@ synthdata %>%
   geom_smooth(method = "lm") +
   facet_wrap(~dm_lunch_bl) +
   labs(title = 'Relation between internet overuse and Daytime sleepiness', subtitle = 'Scatter plot by welfare status', x = 'Internet Overuse score', y = 'Daytime sleepiness', color = 'Age')
+
+## These two plots are so cool and a great use of facet_wrap. I think this is a concise way to visualize the relationship you're interested in, which pulls together some complex constructs into one. The plot title is especially helpful to guide what the graphs are depicting - SM
 
 synthdata %>% 
   ggplot(aes(io_comp, sl_avgsleepcat_bl)) +
