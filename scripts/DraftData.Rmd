@@ -3,8 +3,8 @@ title: "DraftDataScript"
 author: "Heather Leonard, Abbie Sanders, and Rebecca Gordon"
 date: "11/18/2021"
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -22,6 +22,7 @@ library(tidyverse)
 library(here)
 library(janitor)
 library(gtsummary)
+library(gt)
 
 ```
 ```{r}
@@ -110,33 +111,13 @@ synthdata %>%
 ```{r filter-characteristics-by-sex-and-show-pvalues}
 #this will split out the characteristics by sex and add p value with second line. filtered out one gender answer of "other." 
 
-##Trying cols_label
-synthdata %>% 
-  select(grade, dm_childage_bl, dm_sex_bl, dm_ethnic_bl, dm_lunch_bl, dm_race_bl, sl_sleepy_bl, sl_avgsleepcat_bl, io_comp) %>% 
-  tbl_summary(by = dm_sex_bl) %>%
-  bold_labels() %>%
-  cols_label(grade = "Grade", 
-             dm_childage_bl = "Age", 
-             dm_sex_bl = "Sex", 
-             dm_ethnic_bl = "Ethnicity", 
-             dm_lunch_bl = "Free/reduced lunch", 
-             dm_race_bl = "Race", 
-             sl_sleepy_bl = "Average daytime sleepiness", 
-             sl_avgsleepcat_bl = "Average weekly Hours of sleep per night", 
-             io_comp = "Average internet overuse") 
-#renaming variables using select
+#trying rename
 synthdata %>%
-select(Grade = grade, 
-       Age = dm_childage_bl, 
-       Sex = dm_sex_bl, 
-       Ethnicity = dm_ethnic_bl, 
-       Free/reduced lunch = dm_lunch_bl, 
-       Race = dm_race_bl, 
-       Average daytime sleepiness = sl_sleepy_bl, 
-       Average weekly hours of sleep per night = sl_avgsleepcat_bl, 
-       Average internet overuse = io_comp) %>%
-  tbl_summary(by = dm_sex_bl) %>%
-  bold_labels() 
+  select(grade, dm_childage_bl, dm_sex_bl, dm_ethnic_bl, dm_lunch_bl, dm_race_bl, sl_sleepy_bl, sl_avgsleepcat_bl, io_comp) %>%
+  rename (Grade = grade, Age = dm_childage_bl, Sex = dm_sex_bl, Ethnicity = dm_ethnic_bl, "Free/reduced lunch" = dm_lunch_bl, Race = dm_race_bl, "Average daytime sleepiness" = sl_sleepy_bl, "Average weekly hours of sleep per night" = sl_avgsleepcat_bl, "Average internet overuse" = io_comp)
+
+
+ 
 ```
 
 ```{r select-specific-variables-for-summary-table-with-pvalues}
