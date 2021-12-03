@@ -61,7 +61,7 @@ synthdata <- read.csv(here ("data", "synthdata.csv")) %>%
 
 
 ## Introduction
-Inadequate sleep has been linked to a host of negative outcomes in adolescents, including depression, anxiety, substance use, obesity, chronic inflammation, attentional focus, learning, and academic performance.
+Inadequate sleep has been linked to a host of negative outcomes in adolescents, including depression, anxiety, substance use, obesity, chronic inflammation, attentional focus, learning, and academic performance @shochat2014functional. The American Academy of Sleep Medicine recommends that adolescents get 8-10 hours of sleep per 24 hour period @paruthi2016recommended, yet most adolescents don't meet that recommendation. One potential contributor to poor sleep in adolescents is the rise in cell phone access and use. According to a recent Pew Research Center survey, 95 percent of U.S. adolescents (ages 13-17) either own or have exclusive access to a smartphone @anderson2018teens. Additionally, nearly half of adolescents' waking time (7.5 hours per day) is spent on screen media devices, not including time spent in school or doing homework @rideout2015common. According to a 2021 systematic review, internet overuse by adolescents contributes to both less total sleep and poor sleep quality @kokka2021exploring.
 
 ## Methods
 Data were collected from 345 middle school students in the Pacific Northwest. Parents were notified by mail and given the option to opt their student out of the survey. Student assent was collected by research assistants in the classroom prior to administering the survey. Students were compensated for their participation in the study. All procedures were approved by the institutional and school district review boards.
@@ -78,7 +78,7 @@ Internet overuse was measured by asking 4 questions regarding internet use (e.g.
 
 
 
-Our first citation is @paruthi2016recommended and it includes the sleep recommendations for adolescents. Our second citation is @shochat2014functional and it discusses the consequences of inadequate sleep in adolescents. Our third citatin is @kokka2021exploring and it looks at how internet overuse in adolescents impacts their sleep outcomes. Our fourth citation is @anderson2018teens and it includes a statistic showing that 95 percent of U.S. adolescents (ages 13-17) either own or have exclusive access to a smartphone. Finally, our fifth citation is @rideout2015common and it includes the statistic that nearly half of adolescents' waking time (7.5 hours per day) is spent on screen media devices, not including time spent in school or doing homework. We used the @tidyversepackage on this assignment. 
+We used the @tidyversepackage on this assignment. 
 
 NEED TO CITE R PACKAGES WE USED!
 
