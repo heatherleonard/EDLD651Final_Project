@@ -3,8 +3,9 @@ title: "DraftDataScript"
 author: "Heather Leonard, Abbie Sanders, and Rebecca Gordon"
 date: "11/18/2021"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
+  bibliography: references.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -58,6 +59,35 @@ synthdata <- read.csv(here ("data", "synthdata.csv")) %>%
 
 ### Make composite score for internet overuse, using variables io1_bl, io2_bl, io3_bl, and io4_bl. Levels include i don't know, never, rarely, sometimes, often, (1-5); new code is 0-4 scores with composite range of 0-16.
 
+
+## Introduction
+Inadequate sleep has been linked to a host of negative outcomes in adolescents, including depression, anxiety, substance use, obesity, chronic inflammation, attentional focus, learning, and academic performance.
+
+## Methods
+Data were collected from 345 middle school students in the Pacific Northwest. Parents were notified by mail and given the option to opt their student out of the survey. Student assent was collected by research assistants in the classroom prior to administering the survey. Students were compensated for their participation in the study. All procedures were approved by the institutional and school district review boards.
+
+Demographic data collected included age, sex, race/ethnicity, and free/reduced lunch status (used as a stand-in for socioeconomic status). Students were ages 12-14, 53% male and 47% female, and 57% were receiving free/reduced lunch. Ethnicity included 26% identifying as Hispanic or Latino, and race included 33% reporting more than one race, 32% white, 16% unknown, 5% American Indian/native Alaskan, and 3% black/African American.
+
+Total sleep was measured by asking for both weeknights and weekend nights, “what time do you usually go to bed?” and “what time do you usually wake up?” Responses were recorded on a 24-hour scale (range=0-24) and the final variable was created by rounding the difference in reported bedtimes and wake times. Values at the extreme ends were collapsed, and results were summarized into the following categories: 6 hours or less, 6-8 hours, 8-10 hours, and more than 10 hours.
+
+Daytime sleepiness was measured by asking 8 questions (e.g., “how often do you fall asleep or get drowsy during class periods”) with response options ranging from (0) never to (4) always. Participants’ responses were added together to create a composite score (0-32).
+
+Bedtime media use was measured by asking for both weeknights and weekend nights, “in the hour before you go to sleep, how frequently do you use any type of screen media?” Response options ranged from (0) never to (3) often.
+
+Internet overuse was measured by asking 4 questions regarding internet use (e.g., “how often do you have trouble trying to cut down on the amount of time you spend online?” and “how often do your grades or schoolwork have suffered because of the amount of time you spend online?”). Response options ranged from (1) never to (4) often. Responses were added together to create a composite score (0-12). 
+
+
+
+Our first citation is @paruthi2016recommended and it includes the sleep recommendations for adolescents. Our second citation is @shochat2014functional and it discusses the consequences of inadequate sleep in adolescents. Our third citatin is @kokka2021exploring and it looks at how internet overuse in adolescents impacts their sleep outcomes. Our fourth citation is @anderson2018teens and it includes a statistic showing that 95 percent of U.S. adolescents (ages 13-17) either own or have exclusive access to a smartphone. Finally, our fifth citation is @rideout2015common and it includes the statistic that nearly half of adolescents' waking time (7.5 hours per day) is spent on screen media devices, not including time spent in school or doing homework. We used the @tidyversepackage on this assignment. 
+
+NEED TO CITE R PACKAGES WE USED!
+
+
+
+
+
+
+
 ```{r abbie}
 #recode internet overuse score and create a composite score 
 synthdata <- synthdata %>%
@@ -88,11 +118,6 @@ synthdata %>%
 ```
 
 
-```{r}
-#just playing around with pivotlonger here to see if we could come up with anything. it didn't work well. Need to come up with something.
-synthdata %>% 
-  pivot_longer(cols = grade, names_to = "variables", values_to = "answers")
-```
 
 ```{r grouping-and-summarizing}
 synthdata %>% 
@@ -183,3 +208,9 @@ synthdata %>%
   labs(title = 'Relation between internet overuse and Average Hours of sleep', x = 'Internet Overuse score', y = 'Hours of sleep', color = 'Age')
 
 ```
+
+
+
+\newpage
+
+# References
