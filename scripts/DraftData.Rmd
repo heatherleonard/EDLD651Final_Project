@@ -35,7 +35,8 @@ synthdata <- read.csv(here ("data", "synthdata.csv")) %>%
 ## Introduction
 Inadequate sleep has been linked to a host of negative outcomes in adolescents, including depression, anxiety, substance use, obesity, chronic inflammation, attentional focus, learning, and academic performance @shochat2014functional]. The American Academy of Sleep Medicine recommends that adolescents get 8-10 hours of sleep per 24 hour period @paruthi2016recommended, yet most adolescents don't meet that recommendation. One potential contributor to poor sleep in adolescents is the rise in cell phone access and use. According to a recent Pew Research Center survey, 95 percent of U.S. adolescents (ages 13-17) either own or have exclusive access to a smartphone @anderson2018teens. Additionally, nearly half of adolescents' waking time (7.5 hours per day) is spent on screen media devices, not including time spent in school or doing homework @rideout2015common. According to a 2021 systematic review, internet overuse by adolescents contributes to both less total sleep and poor sleep quality @kokka2021exploring.
 
-Given this information, the present study aims to explore the association of adolescent internet overuse and sleep outcomes, including exploratory visuals and statistical summary of the data. Our research question asks: Is internet overuse correlated with sleep outcomes (total sleep, daytime sleepiness) in adolescents? 
+Given this information, the present study aims to explore the association of adolescent bedtime media use, internet overuse and sleep outcomes, including exploratory visuals and statistical summary of the data. Our research questions ask: 1) Is bedtime media use associated with internet overuse?
+ 2) Is internet overuse associated with sleep outcomes(total sleep, daytime sleepiness) in adolescents? 
 
 ## Methods
 Data were collected from 345 middle school students in the Pacific Northwest. Parents were notified by mail and given the option to opt their student out of the survey. Student assent was collected by research assistants in the classroom prior to administering the survey. Students were compensated for their participation in the study. All procedures were approved by the institutional and school district review boards.
@@ -83,6 +84,7 @@ synthdata %>%
 
 
 ```{r grouping-and-summarizing}
+#note from Abbie: I don't think we need this 
 synthdata %>% 
   group_by(dm_sex_bl) %>% 
   summarise(mean_io = mean(io_comp))
@@ -99,15 +101,27 @@ synthdata %>%
 ```{r filter-characteristics-by-sex-and-show-pvalues}
 #this will split out the characteristics and add mean and SD for continuous variables. filtered out one gender answer of "other." 
 
+#note from Abbie: I am having issues here with the renaming
+
 synthdata %>%
   select(grade, dm_childage_bl, dm_sex_bl, dm_ethnic_bl, dm_lunch_bl, dm_race_bl, sl_sleepy_bl, sl_avgsleepcat_bl, io_comp) %>%
-  rename (Grade = grade, Age = dm_childage_bl, Sex = dm_sex_bl, Ethnicity = dm_ethnic_bl, "Free/reduced lunch" = dm_lunch_bl, Race = dm_race_bl, "Average daytime sleepiness" = sl_sleepy_bl, "Average weekly hours of sleep per night" = sl_avgsleepcat_bl, "Average internet overuse" = io_comp) %>% 
+  rename (Grade = grade, 
+          Age = dm_childage_bl, 
+          Sex = dm_sex_bl, 
+          Ethnicity = dm_ethnic_bl, 
+          Free/reduced lunch = dm_lunch_bl, 
+          Race = dm_race_bl, 
+          Average daytime sleepiness = sl_sleepy_bl, 
+          Average weekly hours of sleep per night = sl_avgsleepcat_bl, 
+          Average internet overuse = io_comp) %>% 
   tbl_summary(statistic = list(all_continuous() ~ "{mean} ({sd})")) %>%
   modify_caption("**Table 1. Participant Characteristics**")
 
 ```
 
 ```{r select-specific-variables-for-summary-table-with-pvalues}
+#note from Abbie: I don't think we need this 
+
 synthdata %>% 
   select(sl_avgsleepcat_bl, io_comp) %>% 
   tbl_summary(by = sl_avgsleepcat_bl) %>% 
@@ -115,33 +129,37 @@ synthdata %>%
 ```
 
 ```{r select-sdifferent-variables-for-summary-table-with-pvalues}
+#note from Abbie: I don't think we need this 
+
 synthdata %>% 
   select(sl_bedmedia_bl, io_comp) %>% 
   tbl_summary(by = sl_bedmedia_bl) %>% 
   add_p()
 ```
 ```{r correlation-of-bedtime-media-use-and-internet-overuse}
-#answer to our research question: positive relationship that is very very small
+#Research question 1:
+
+#positive relationship that is very very small
 cor.test(synthdata$sl_bedmedia_bl, synthdata$io_comp, method = "pearson", use = "complete.obs")
 
+#positive relationship that is very very small
+
+
 ```
 
-```{r correlation-ofinternet-overuse-and-total-sleep-on-schoolnights}
-#not really a correlation between internet overuse and total sleep on school nights
+```{r correlation-ofinternet-overuse-and-sleepoutcomes}
+#Research question 2 
+
+
+#total sleep
 cor.test(synthdata$io_comp, synthdata$sl_sleepschool_bl, method = "pearson", use = "complete.obs")
-```
+#not really a correlation between internet overuse and total sleep on school nights
 
-```{r correlation-of-internet-overuse-and-daytime-sleepiness}
-#positive correlation that is very small
+#daytime sleepiness
 cor.test(synthdata$io_comp, synthdata$sl_sleepy_bl, method = "pearson", use = "complete.obs")
-```
-```{r correlation-of-internet-overuse-and-welfare-status}
 #positive correlation that is very small
-
-cor.test(synthdata$io_comp, as.numeric(synthdata$lunch_RC), method = "pearson", use = "complete.obs")
-
-
 ```
+
 
 ```{r, Rebecca-ggplot}
 
