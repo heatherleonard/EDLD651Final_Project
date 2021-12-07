@@ -3,8 +3,8 @@ title: "DraftDataScript"
 author: "Heather Leonard, Abbie Sanders, and Rebecca Gordon"
 date: "12/08/2021"
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 bibliography: references.bib
 ---
 
@@ -52,7 +52,7 @@ iosd <- sd(synthdata$io_comp, na.rm = TRUE)
 ```
 
 ## Abstract
-**Introduction:** Inadequate sleep has been linked to a host of negative outcomes in adolescents. One potential contributor to poor sleep in adolescents is the rise in cell phone access and use. This study explores the association of adolescent internet overuse and sleep outcomes. **Methods:** Data were collected from 345 middle school students (ages 12-14, 47% female) in the Pacific Northwest. Correlations were run on self-reported sleep measures (total sleep time per night and daytime sleepiness) and internet overuse. **Results:** Adolescent bedtime media use and internet overuse were positively correlated. Internet Overuse was also positively correlated with report of daytime sleepiness **Conclusion:**
+**Introduction:** Inadequate sleep has been linked to a host of negative outcomes in adolescents. One potential contributor to poor sleep in adolescents is the rise in cell phone access and use. This study explores the association of adolescent internet overuse and sleep outcomes. **Methods:** Data were collected from 345 middle school students (ages 12-14, 47% female) in the Pacific Northwest. Correlations were run on self-reported sleep measures (total sleep time per night and daytime sleepiness) and internet overuse. **Results:** Adolescent bedtime media use and internet overuse were positively correlated. Internet Overuse was also positively correlated with report of daytime sleepiness **Conclusion:** These results indicate that bedtime media use among adolescents is strongly related to overuse. Additionally, media overuse negatively impact quality of life during the day. 
 
 ## Introduction
 Inadequate sleep has been linked to a host of negative outcomes in adolescents, including depression, anxiety, substance use, obesity, chronic inflammation, attentional focus, learning, and academic performance [@shochat2014functional]. The American Academy of Sleep Medicine recommends that adolescents get 8-10 hours of sleep per 24 hour period [@paruthi2016recommended], yet most adolescents don't meet that recommendation. One potential contributor to poor sleep in adolescents is the rise in cell phone access and use. According to a recent Pew Research Center survey, 95 percent of U.S. adolescents (ages 13-17) either own or have exclusive access to a smartphone [@anderson2018teens]. Additionally, nearly half of adolescents' waking time (7.5 hours per day) is spent on screen media devices, not including time spent in school or doing homework [@rideout2015common]. According to a 2021 systematic review, internet overuse by adolescents contributes to both less total sleep and poor sleep quality [@kokka2021exploring].
@@ -109,7 +109,7 @@ synthdata %>%
 
 ```
 
-## *Research Question 1*  
+### *Research Question 1*  
 
 We ran a Pearson's correlation analysis to examine the relationship between bedtime media use and internet overuse. There was significant,  positive association r(323) = .17, p  < .001. As adolescent bedtime media use increases, so do adolescent reports of overusing the internet.  
 
@@ -123,9 +123,9 @@ cor.test(synthdata$sl_bedmedia_bl, synthdata$io_comp, method = "pearson", use = 
 
 
 ```
-## *Research Question 2*  
+### *Research Question 2*  
 
-To examine the relationship between internet overuse and sleep outcomes, we ran two Pearson's correlation analyses. First, we tested the association between internet overuse and average sleep on school nights. The results indicated that these two variables are not significantly associated r(337) = -0.04, p  = .46. However, internet overuse was positively correlated with reported daytime sleepiness r(335) = .18, p  < .001, indicating that as reports of internet overuse increase, reports of daytime sleepiness also increase.   
+To examine the relationship between internet overuse and sleep outcomes, we ran two Pearson's correlation analyses. First, we tested the association between internet overuse and average sleep on school nights. The results indicated that these two variables are not significantly associated r(337) = -0.04, _p_  = .46. However, internet overuse was positively correlated with reported daytime sleepiness r(335) = .18, _p_  < .001, indicating that as reports of internet overuse increase, reports of daytime sleepiness also increase.   
 
 ```{r correlation-ofinternet-overuse-and-sleepoutcomes}
 #Research question 2 
@@ -154,19 +154,25 @@ synthdata %>%
   geom_jitter(aes(color = as.factor(age_RC))) +
   geom_smooth(method = "lm") +
   facet_wrap(~dm_lunch_bl) +
-  labs(title = 'Relation between internet overuse and Daytime sleepiness', subtitle = 'Scatter plot by welfare status', x = 'Internet Overuse score', y = 'Daytime sleepiness', color = 'Age') +
+  labs(title = 'Plot 1: Relation between internet overuse and Daytime sleepiness', subtitle = 'Scatter plot by welfare status', x = 'Internet Overuse score', y = 'Daytime sleepiness', color = 'Age') +
   theme_minimal()
 
 synthdata %>% 
   ggplot(aes(io_comp, sl_avgsleepcat_bl)) +
   geom_jitter(aes(color = as.factor(age_RC))) +
-  labs(title = 'Relation between internet overuse and Average Hours of sleep', x = 'Internet Overuse score', y = 'Hours of sleep', color = 'Age') +
+  labs(title = 'Plot 2: Relation between internet overuse and Average Hours of sleep', x = 'Internet Overuse score', y = 'Hours of sleep', color = 'Age') +
   theme_minimal()
 
 ```
 
 ## Discussion
 
+These results suggest that bedtime media use can lead to internet overuse among adolescents. Additionally, internet overuse can increase daytime sleepiness, but not total hours of sleep. These findings indicate that media use in general can be harmful to quality of life for adolescents and that media devices are not as innocuous as they appear to be.
+
+The results from plot 1 show that welfare status does not have an impact of internet overuse and daytime sleepiness. This finding is congruent with the Pew report that 95 percent of U.S. adolescents (ages 13-17) either own or have exclusive access to a smartphone regardless of welfare status [@anderson2018teens]. The results from plot 2 show that the majority of students are getting the hours of sleep per night recommended by The American Academy of Sleep Medicine [@paruthi2016recommended]. However, the students who are getting 6 or less hours of sleep per night appear to have a higher internet overuse score.
+
+Overall, these findings indicate that media use among adolescents may be negatively impacting important aspects of their diurnal functioning.
+
 \newpage
 
-# References
+### References
