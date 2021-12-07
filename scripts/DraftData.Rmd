@@ -1,5 +1,5 @@
 ---
-title: "DraftDataScript"
+title: "Internet Overuse and Adolescent Sleep"
 author: "Heather Leonard, Abbie Sanders, and Rebecca Gordon"
 date: "12/08/2021"
 output:
@@ -157,6 +157,7 @@ synthdata %>%
   facet_wrap(~dm_lunch_bl) +
   labs(title = 'Plot 1: Relation between internet overuse and Daytime sleepiness', subtitle = 'Scatter plot by welfare status', x = 'Internet Overuse score', y = 'Daytime sleepiness', color = 'Age') +
   theme_minimal()
+
 
 synthdata %>% 
   ggplot(aes(io_comp, sl_avgsleepcat_bl)) +
