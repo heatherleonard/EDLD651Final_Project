@@ -32,23 +32,29 @@ synthdata <- read.csv(here ("data", "synthdata.csv")) %>%
 ```{r abbie}
 #recode internet overuse score and create a composite score 
 synthdata <- synthdata %>%
-  mutate(io1_RC = recode(io1_bl, "i don't know" = 0, "never" = 1, "often" = 2, "rarely" = 3, "sometimes" = 4)) %>%
-  mutate(io2_RC = recode(io2_bl, "i don't know" = 0, "never" = 1, "often" = 2, "rarely" = 3, "sometimes" = 4)) %>%
-  mutate(io3_RC = recode(io3_bl, "i don't know" = 0, "never" = 1, "often" = 2, "rarely" = 3, "sometimes" = 4)) %>%
-  mutate(io4_RC = recode(io4_bl, "i don't know" = 0, "never" = 1, "often" = 2, "rarely" = 3, "sometimes" = 4)) %>%
-  mutate(io_comp = io1_RC + io2_RC + io3_RC + io4_RC)
+# jftn - another way to do this, but this will not create new variables, if that is important you can do that too
+  # mutate(across(c(io1_bl:io4_bl), ~recode(.x,
+  #                                         "i don't know" = 0, "never" = 1, "often" = 2, "rarely" = 3, "sometimes" = 4)))
+  mutate(io1_RC = recode(io1_bl, "i don't know" = 0, "never" = 1, "often" = 2, "rarely" = 3, "sometimes" = 4),
+         io2_RC = recode(io2_bl, "i don't know" = 0, "never" = 1, "often" = 2, "rarely" = 3, "sometimes" = 4),
+         io3_RC = recode(io3_bl, "i don't know" = 0, "never" = 1, "often" = 2, "rarely" = 3, "sometimes" = 4),
+         io4_RC = recode(io4_bl, "i don't know" = 0, "never" = 1, "often" = 2, "rarely" = 3, "sometimes" = 4),
+         io_comp = io1_RC + io2_RC + io3_RC + io4_RC,
+         # age_RC = parse_number(dm_childage_bl), #You could try this instead of the line below, but nice use of str_sub()!
+         age_RC = as.numeric(str_sub(synthdata$dm_childage_bl, 1, 2)),
+         lunch_RC = recode(dm_lunch_bl, "no" = 0, "yes" = 1,"i don't know" = 2))
 
 #recode age
-synthdata$age_RC <- as.numeric(str_sub(synthdata$dm_childage_bl, 1,2)) 
-
-#recode free reduced lunch, I want to make "i don't know" a missing value
-synthdata <- synthdata %>%
-  mutate(lunch_RC = recode(dm_lunch_bl, "no" = 0, "yes" = 1,"i don't know" = 2))
+# synthdata$age_RC <- as.numeric(str_sub(synthdata$dm_childage_bl, 1,2)) 
+# 
+# #recode free reduced lunch, I want to make "i don't know" a missing value
+# synthdata <- synthdata %>%
+#   mutate(lunch_RC = recode(dm_lunch_bl, "no" = 0, "yes" = 1,"i don't know" = 2))
 
 #Mean and SD
-iomean <- mean(synthdata$io_comp, na.rm = TRUE) 
+iomean <- round(mean(synthdata$io_comp, na.rm = TRUE), 2)
 
-iosd <- sd(synthdata$io_comp, na.rm = TRUE)
+iosd <- round(sd(synthdata$io_comp, na.rm = TRUE), 2)
 ```
 
 ## Abstract
@@ -58,26 +64,27 @@ iosd <- sd(synthdata$io_comp, na.rm = TRUE)
 Inadequate sleep has been linked to a host of negative outcomes in adolescents, including depression, anxiety, substance use, obesity, chronic inflammation, attentional focus, learning, and academic performance [@shochat2014functional]. The American Academy of Sleep Medicine recommends that adolescents get 8-10 hours of sleep per 24 hour period [@paruthi2016recommended], yet most adolescents don't meet that recommendation. One potential contributor to poor sleep in adolescents is the rise in cell phone access and use. According to a recent Pew Research Center survey, 95 percent of U.S. adolescents (ages 13-17) either own or have exclusive access to a smartphone [@anderson2018teens]. Additionally, nearly half of adolescents' waking time (7.5 hours per day) is spent on screen media devices, not including time spent in school or doing homework [@rideout2015common]. According to a 2021 systematic review, internet overuse by adolescents contributes to both less total sleep and poor sleep quality [@kokka2021exploring].
 
 Given this information, the present study aims to explore the association of adolescent bedtime media use, internet overuse and sleep outcomes, including exploratory visuals and statistical summary of the data. Our research questions ask: 
-1) Is bedtime media use associated with internet overuse?
-2) Is internet overuse associated with sleep outcomes(total sleep, daytime sleepiness) in adolescents? 
+
+1. Is bedtime media use associated with internet overuse?
+2. Is internet overuse associated with sleep outcomes(total sleep, daytime sleepiness) in adolescents? 
 
 ## Methods
-Data were collected from 345 middle school students in the Pacific Northwest. Parents were notified by mail and given the option to opt their student out of the survey. Student assent was collected by research assistants in the classroom prior to administering the survey. Students were compensated for their participation in the study. All procedures were approved by the institutional and school district review boards.
+Data were collected from `r nrow(synthdata)` middle school students in the Pacific Northwest. Parents were notified by mail and given the option to opt their student out of the survey. Student assent was collected by research assistants in the classroom prior to administering the survey. Students were compensated for their participation in the study. All procedures were approved by the institutional and school district review boards.
 
-Demographic data collected included age, sex, race/ethnicity, and free/reduced lunch status (used as a stand-in for socioeconomic status). Students were ages 12-14, 53% male and 47% female, and 57% were receiving free/reduced lunch. Ethnicity included 26% identifying as Hispanic or Latino, and race included 33% reporting more than one race, 32% white, 16% unknown, 5% American Indian/native Alaskan, and 3% black/African American.
+Demographic data collected included age, sex, race/ethnicity, and free/reduced lunch status (used as a stand-in for socioeconomic status). Students were ages `r min(synthdata$age_RC, na.rm = TRUE)`-`r max(synthdata$age_RC, na.rm = TRUE)`, `r round(sum(synthdata$dm_sex_bl == "male")/nrow(synthdata)*100)`% male and 47% female, and `r round(sum(synthdata$dm_lunch_bl == "yes")/nrow(synthdata)*100)`% were receiving free/reduced lunch. Ethnicity included 26% identifying as Hispanic or Latino, and race included 33% reporting more than one race, 32% white, 16% unknown, 5% American Indian/native Alaskan, and 3% black/African American.
 
-Total sleep was measured by asking for both weeknights and weekend nights, “what time do you usually go to bed?” and “what time do you usually wake up?” Responses were recorded on a 24-hour scale (range=0-24) and the final variable was created by rounding the difference in reported bedtimes and wake times. Values at the extreme ends were collapsed, and results were summarized into the following categories: 6 hours or less, 6-8 hours, 8-10 hours, and more than 10 hours.
+Total sleep was measured by asking for both weeknights and weekend nights, “what time do you usually go to bed?” and “what time do you usually wake up?” Responses were recorded on a 24-hour scale (range = 0-24) and the final variable was created by rounding the difference in reported bedtimes and wake times. Values at the extreme ends were collapsed, and results were summarized into the following categories: 6 hours or less, 6-8 hours, 8-10 hours, and more than 10 hours.
 
-Daytime sleepiness was measured by asking 8 questions (e.g., “how often do you fall asleep or get drowsy during class periods”) with response options ranging from (0) never to (4) always. Participants’ responses were added together to create a composite score (0-32).
+Daytime sleepiness was measured by asking 8 questions (e.g., “how often do you fall asleep or get drowsy during class periods”) with response options ranging from (0) *never* to (4) *always.* Participants’ responses were added together to create a composite score (0-32).
 
-Bedtime media use was measured by asking for both weeknights and weekend nights, “in the hour before you go to sleep, how frequently do you use any type of screen media?” Response options ranged from (0) never to (3) often.
+Bedtime media use was measured by asking for both weeknights and weekend nights, “in the hour before you go to sleep, how frequently do you use any type of screen media?” Response options ranged from (0) *never* to (3) *often.*
 
 Internet overuse was measured by asking 4 questions regarding internet use (e.g., “how often do you have trouble trying to cut down on the amount of time you spend online?” and “how often do your grades or schoolwork have suffered because of the amount of time you spend online?”). Response options ranged from (1) never to (4) often. Responses were added together to create a composite score (0-16; *M* = `r iomean`) , *SD* = `r iosd`). 
 
-We used the following packages on this assignment. @wickham2019welcome, @riopackage, @gtsummary, and @herepackage.
+We used the following `R` @rsoftware packages on this assignment: `tidyverse` @wickham2019welcome, `rio` @riopackage, `gtsummary` @gtsummary, and `here` @herepackage.
 
 
-```{r pivotlonger-to-tidy-iodata}
+```{r pivotlonger-to-tidy-iodata, eval=FALSE}
 synthdata %>%
   select(1:6, io1_RC:io4_RC)  %>%
   pivot_longer(
@@ -87,7 +94,7 @@ synthdata %>%
   )
 ```
 
-```{r grouping-and-summarizing-using-pivot-wider}
+```{r grouping-and-summarizing-using-pivot-wider, eval=FALSE}
 synthdata %>% 
   group_by(dm_lunch_bl) %>% 
   summarise(mean_io = mean(io_comp)) %>% 
@@ -106,39 +113,40 @@ synthdata %>%
   select(grade, dm_childage_bl, dm_sex_bl, dm_ethnic_bl, dm_lunch_bl, dm_race_bl, sl_sleepy_bl, sl_avgsleepcat_bl, io_comp) %>%
   rename (Grade = grade, Age = dm_childage_bl, Sex = dm_sex_bl, Ethnicity = dm_ethnic_bl, "Free/reduced lunch" = dm_lunch_bl, Race = dm_race_bl, "Average daytime sleepiness" = sl_sleepy_bl, "Average weekly hours of sleep per night" = sl_avgsleepcat_bl, "Average internet overuse" = io_comp) %>% 
   tbl_summary(statistic = list(all_continuous() ~ "{mean} ({sd})")) %>%
-  modify_caption("**Table 1. Participant Characteristics**")
+  modify_caption("**Participant Characteristics**")
 
 ```
 
 ### *Research Question 1*  
 
-We ran a Pearson's correlation analysis to examine the relationship between bedtime media use and internet overuse. There was significant,  positive association r(323) = .17, p  < .001. As adolescent bedtime media use increases, so do adolescent reports of overusing the internet.  
-
 ```{r correlation-of-bedtime-media-use-and-internet-overuse}
 #Research question 1:
 
 #positive relationship that is very very small
-cor.test(synthdata$sl_bedmedia_bl, synthdata$io_comp, method = "pearson", use = "complete.obs")
+cor1 <- cor.test(synthdata$sl_bedmedia_bl, synthdata$io_comp, method = "pearson", use = "complete.obs")
 
 #positive relationship that is very very small
 
-
 ```
-### *Research Question 2*  
 
-To examine the relationship between internet overuse and sleep outcomes, we ran two Pearson's correlation analyses. First, we tested the association between internet overuse and average sleep on school nights. The results indicated that these two variables are not significantly associated r(337) = -0.04, _p_  = .46. However, internet overuse was positively correlated with reported daytime sleepiness r(335) = .18, _p_  < .001, indicating that as reports of internet overuse increase, reports of daytime sleepiness also increase.   
+We ran a Pearson's correlation analysis to examine the relationship between bedtime media use and internet overuse. There was significant,  positive association *r*(`r unname(cor1$parameter)`) = `r round(unname(cor1$estimate), 2)`, *p* < .01. As adolescent bedtime media use increases, so do adolescent reports of overusing the internet.  
+
+
+### *Research Question 2*  
 
 ```{r correlation-ofinternet-overuse-and-sleepoutcomes}
 #Research question 2 
 
 #school night sleep
-cor.test(synthdata$io_comp, synthdata$sl_sleepschool_bl, method = "pearson", use = "complete.obs")
+cor2 <- cor.test(synthdata$io_comp, synthdata$sl_sleepschool_bl, method = "pearson", use = "complete.obs")
 #not really a correlation between internet overuse and school night sleep on school nights
 
 #daytime sleepiness
-cor.test(synthdata$io_comp, synthdata$sl_sleepy_bl, method = "pearson", use = "complete.obs")
+cor3 <- cor.test(synthdata$io_comp, synthdata$sl_sleepy_bl, method = "pearson", use = "complete.obs")
 #positive correlation that is very small
 ```
+
+To examine the relationship between internet overuse and sleep outcomes, we ran two Pearson's correlation analyses. First, we tested the association between internet overuse and average sleep on school nights. The results indicated that these two variables are not significantly associated *r*(`r unname(cor2$parameter)`) = `r round(unname(cor2$estimate), 2)`, _p_  = .46. However, internet overuse was positively correlated with reported daytime sleepiness *r*(335) = .18, _p_  < .001, indicating that as reports of internet overuse increase, reports of daytime sleepiness also increase.   
 
 ## *Exploratory Visuals*  
 
@@ -147,8 +155,10 @@ To examine the relationship between our correlation analyses and demographic var
 ```{r, Rebecca-ggplot}
 
 #Removes all "i don't know" values
-synthdata <- synthdata %>% 
-filter(synthdata$age_RC != "i don't know" & synthdata$dm_lunch_bl != "i don't know")
+synthdata <- synthdata %>%
+  filter(
+    synthdata$age_RC != "i don't know" & 
+      synthdata$dm_lunch_bl != "i don't know")
 
 synthdata %>% 
   ggplot(aes(io_comp, sl_sleepy_bl)) +
